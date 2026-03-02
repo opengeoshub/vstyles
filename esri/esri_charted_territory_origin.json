@@ -6612,7 +6612,7 @@
                 "icon-allow-overlap": true,
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.5,
                 "text-anchor": "bottom-left",
@@ -6647,7 +6647,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -6690,7 +6690,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -6732,7 +6732,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": {
                     "stops": [
@@ -6774,7 +6774,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -6816,7 +6816,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -6858,7 +6858,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -6900,7 +6900,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -6942,7 +6942,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -6993,7 +6993,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.05,
@@ -7018,7 +7018,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.5,
                 "text-letter-spacing": 0.07,
@@ -7050,7 +7050,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.3,
                 "text-letter-spacing": 0.01,
@@ -7093,7 +7093,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.3,
                 "text-letter-spacing": 0.1,
@@ -7136,7 +7136,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 8.5,
                 "text-letter-spacing": 0.1,
@@ -7192,7 +7192,7 @@
             "minzoom": 11,
             "layout": {
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9.5,
                 "text-letter-spacing": 0.08,
@@ -7222,7 +7222,7 @@
             "minzoom": 11,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.5,
                 "text-letter-spacing": 0.08,
@@ -7254,7 +7254,7 @@
                 "symbol-placement": "line",
                 "symbol-spacing": 1000,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 10.5,
                 "text-letter-spacing": 0.13,
@@ -7286,7 +7286,7 @@
                 "symbol-placement": "line",
                 "symbol-spacing": 1000,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 10.5,
                 "text-letter-spacing": 0.13,
@@ -7318,7 +7318,7 @@
                 "symbol-placement": "line",
                 "symbol-spacing": 1000,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 10.5,
                 "text-letter-spacing": 0.13,
@@ -7348,7 +7348,7 @@
             "minzoom": 11,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 10.5,
                 "text-letter-spacing": 0.13,
@@ -7379,7 +7379,7 @@
             "minzoom": 11,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 10.5,
                 "text-letter-spacing": 0.13,
@@ -7410,7 +7410,7 @@
             "minzoom": 11,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 10.5,
                 "text-letter-spacing": 0.13,
@@ -7448,7 +7448,7 @@
                 "text-padding": 15,
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ]
             },
             "paint": {
@@ -7479,7 +7479,7 @@
                 "text-padding": 15,
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ]
             },
             "paint": {
@@ -7505,7 +7505,7 @@
                 "symbol-placement": "line",
                 "symbol-spacing": 1000,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.3,
                 "text-letter-spacing": 0.1,
@@ -7536,7 +7536,7 @@
             "maxzoom": 11,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.3,
                 "text-letter-spacing": 0.1,
@@ -7568,7 +7568,7 @@
                 "symbol-avoid-edges": true,
                 "text-letter-spacing": 0.08,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.3
             },
@@ -7588,7 +7588,7 @@
             "maxzoom": 5,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9.3,
                 "text-letter-spacing": 0.08,
@@ -7613,7 +7613,7 @@
             "minzoom": 11,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 10.5,
                 "text-letter-spacing": 0.13,
@@ -7654,7 +7654,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -7719,7 +7719,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -7789,7 +7789,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -7859,7 +7859,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -7929,7 +7929,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -7999,7 +7999,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -8060,7 +8060,7 @@
             "maxzoom": 10,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-letter-spacing": {
                     "stops": [
@@ -8140,7 +8140,7 @@
             "maxzoom": 10,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-letter-spacing": {
                     "stops": [
@@ -8228,7 +8228,7 @@
             "maxzoom": 10,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-letter-spacing": {
                     "stops": [
@@ -8308,7 +8308,7 @@
             "maxzoom": 10,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-letter-spacing": {
                     "stops": [
@@ -8388,7 +8388,7 @@
             "maxzoom": 10,
             "layout": {
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-letter-spacing": {
                     "stops": [
@@ -8467,7 +8467,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.1,
@@ -8497,7 +8497,7 @@
                 "symbol-placement": "line",
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.1,
@@ -8528,7 +8528,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.05,
@@ -8567,7 +8567,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.05,
@@ -8606,7 +8606,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.09,
@@ -8660,7 +8660,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.09,
@@ -8714,7 +8714,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": {
                     "stops": [
@@ -8779,7 +8779,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": {
                     "stops": [
@@ -9039,7 +9039,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.09,
@@ -9093,7 +9093,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9,
                 "text-letter-spacing": 0.09,
@@ -9147,7 +9147,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": {
                     "stops": [
@@ -9212,7 +9212,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": {
                     "stops": [
@@ -13348,7 +13348,7 @@
                 "symbol-avoid-edges": true,
                 "symbol-spacing": 400,
                 "text-font": [
-                    "Open Sans Regular"
+                    "Merriweather Regular"
                 ],
                 "text-size": 9.3,
                 "text-letter-spacing": 0.05,
@@ -16565,7 +16565,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
@@ -16617,7 +16617,7 @@
             "layout": {
                 "symbol-avoid-edges": true,
                 "text-font": [
-                    "Open Sans Italic"
+                    "Merriweather Italic"
                 ],
                 "text-size": {
                     "stops": [
