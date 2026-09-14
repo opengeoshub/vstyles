@@ -30,6 +30,14 @@
       "maxzoom": 14,
       "scheme": "xyz"
     },
+    "natural_earth_shaded_relief": {
+      "maxzoom": 6,
+      "tileSize": 256,
+      "tiles": [
+        "https://klokantech.github.io/naturalearthtiles/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png"
+      ],
+      "type": "raster"
+    },
     "vn_islands": {
       "type": "vector",
       "tiles": [
@@ -46,6 +54,13 @@
       "id": "background",
       "type": "background",
       "paint": {"background-color": "rgb(242,243,240)"}
+    },
+    {
+      "id": "natural_earth",
+      "type": "raster",
+      "source": "natural_earth_shaded_relief",
+      "maxzoom": 6,
+      "paint": {"raster-opacity": {"base": 1.5, "stops": [[0, 0.6], [6, 0.1]]}}
     },
     {
       "id": "park",
