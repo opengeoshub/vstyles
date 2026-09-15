@@ -24,7 +24,7 @@
     "openmaptiles": {
       "type": "vector",
       "tiles": [
-        "https://api.maptiler.com/tiles/v3/tiles.json?key={key}"
+        "https://api.maptiler.com/tiles/v3/tiles.json?key=K5aZv0bPdoXh7aus0bnv"
       ]
     },
     "vn_islands": {
