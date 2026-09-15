@@ -24,7 +24,7 @@
     "openmaptiles": {
       "type": "vector",
       "tiles": [
-        "https://api.maptiler.com/tiles/v3/tiles.json?key=KaXx1bH6QdVjcSyKSymW"
+        "https://tiles.basemaps.cartocdn.com/vectortiles/carto.streets/v1/{z}/{x}/{y}.mvt?key=cb1_2bjm_1_d67dc3f5aa73651e7b4f659c"
       ]
     },
     "vn_islands": {
