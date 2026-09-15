@@ -285,7 +285,8 @@
           "#cccccc"
         ],
         "fill-opacity": 0.45
-      }
+      },
+      "maxzoom": 14
     },
     {
       "id": "vn_wards",
@@ -375,7 +376,8 @@
         ],
         "fill-opacity": 0.55,
         "fill-outline-color": "rgba(0,0,0,0.2)"
-      }
+      },
+      "maxzoom": 14
     },
     {
       "id": "vn_provinces_outline",
@@ -401,7 +403,8 @@
           ]
         },
         "line-opacity": 0.85
-      }
+      },
+      "maxzoom": 14
     },
     {
       "id": "water_intermittent",
@@ -2100,7 +2103,8 @@
         "text-color": "#222222",
         "text-halo-color": "rgba(255,255,255,0.9)",
         "text-halo-width": 1.2
-      }
+      },
+      "maxzoom": 14
     },
     {
       "id": "vn_provinces_name",
@@ -2145,7 +2149,8 @@
         "text-color": "#111111",
         "text-halo-color": "rgba(255,255,255,0.95)",
         "text-halo-width": 1.8
-      }
+      },
+      "maxzoom": 14
     }
   ],
   "id": "admin"
