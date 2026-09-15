@@ -1176,7 +1176,6 @@
         "text-field": "{name}",
         "text-transform": "uppercase",
         "text-size": {"stops": [[4, 16], [12, 40]]},
-        "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
         "text-letter-spacing": {"stops": [[0, 0.1], [10, 0.5]]},
         "symbol-placement": "line",
         "symbol-z-order": "source"
