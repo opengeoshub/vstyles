@@ -50,7 +50,7 @@
     "ne": {
       "type": "raster",
       "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/ne_grey/{z}/{x}/{y}.png"
+        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
       "maxzoom": 9

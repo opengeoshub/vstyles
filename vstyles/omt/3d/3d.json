@@ -24,12 +24,10 @@
     "ne_shaded": {
       "type": "raster",
       "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/ne_shaded/{z}/{x}/{y}.png"
+        "https://tiles.gishub.vn/ne_shaded/{z}/{x}/{y}.webp"  
       ],
       "minzoom": 0,
-      "maxzoom": 14,
-      "scheme": "xyz",
-      "tileSize": 512
+      "maxzoom": 6
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",

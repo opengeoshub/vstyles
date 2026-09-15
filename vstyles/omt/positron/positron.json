@@ -38,12 +38,10 @@
     "ne_grey": {
       "type": "raster",
       "tiles": [
-        " https://map-api-new.sovereignsolutions.net/sovereign/v20240410/ne_grey/{z}/{x}/{y}.png"
+        " https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
-      "maxzoom": 6,
-      "scheme": "xyz",
-      "tileSize": 512
+      "maxzoom": 6     
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/positron/sprite",
