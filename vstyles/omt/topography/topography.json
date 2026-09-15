@@ -47,10 +47,10 @@
   "bearing": 0,
   "pitch": 0,
   "sources": {
-    "ne": {
+    "ne_blended": {
       "type": "raster",
       "tiles": [
-        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
+        "https://tiles.gishub.vn/ne_blended/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
       "maxzoom": 9
@@ -101,9 +101,9 @@
       }
     },
     {
-      "id": "ne",
+      "id": "ne_blended",
       "type": "raster",
-      "source": "ne",
+      "source": "ne_blended",
       "maxzoom": 6,
       "layout": {
         "visibility": "visible"
