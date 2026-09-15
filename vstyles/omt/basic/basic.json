@@ -23,10 +23,8 @@
       "maxzoom": 14
     }
   },
- 
-
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
-
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/positron/sprite",
   "layers": [
     {
       "id": "background",

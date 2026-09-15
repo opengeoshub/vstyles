@@ -53,10 +53,10 @@ def merge_sprites_and_json(sprite_image_1_path, json_1_path, sprite_image_2_path
 
 # Example usage
 merge_sprites_and_json(
-    sprite_image_1_path='vstyles/omt/liberty/sprite.png',
-    json_1_path='vstyles/omt/liberty/sprite.json',
-    sprite_image_2_path='vstyles/vnsprite/sprite.png',
-    json_2_path='vstyles/vnsprite/sprite.json',
-    output_image_path='vstyles/omt/liberty/sprite_vn.png',
-    output_json_path='vstyles/omt/liberty/sprite@_vn.json',
+    sprite_image_1_path='vstyles/omt/bright/sprite@2x.png',
+    json_1_path='vstyles/omt/bright/sprite@2x.json',
+    sprite_image_2_path='vstyles/vnsprite/sprite@2x.png',
+    json_2_path='vstyles/vnsprite/sprite@2x.json',
+    output_image_path='vstyles/omt/bright/sprite@2x_vn.png',
+    output_json_path='vstyles/omt/bright/sprite@2x_vn.json',
 )

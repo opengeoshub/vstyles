@@ -33,6 +33,7 @@
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/positron/sprite",
   "layers": [
     {
       "id": "background",
@@ -1649,6 +1650,5 @@
       }
     }
   ],
-  "id": "maptiler-3d",
-  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/positron/sprite"
+  "id": "maptiler-3d"
 }
