@@ -42,6 +42,14 @@
       ],
       "minzoom": 0,
       "maxzoom": 8
+    },
+    "ne_grey": {
+      "type": "raster",
+      "tiles": [
+        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
+      ],
+      "minzoom": 0,
+      "maxzoom": 6
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
@@ -52,6 +60,30 @@
       "type": "background",
       "paint": {
         "background-color": "hsl(47, 26%, 88%)"
+      }
+    },
+    {
+      "id": "ne_grey",
+      "type": "raster",
+      "source": "ne_grey",
+      "maxzoom": 6,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          0.1,
+          6,
+          0.4
+        ]
       }
     },
     {
@@ -1660,29 +1692,6 @@
       }
     },
     {
-      "id": "admin_sub",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "boundary",
-      "filter": [
-        "in",
-        "admin_level",
-        4,
-        6,
-        8
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "hsla(0, 0%, 60%, 0.5)",
-        "line-dasharray": [
-          2,
-          1
-        ]
-      }
-    },
-    {
       "id": "admin_country_z0-4",
       "type": "line",
       "source": "openmaptiles",
@@ -1883,201 +1892,6 @@
       "paint": {
         "text-color": "#000",
         "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-width": 2
-      }
-    },
-    {
-      "id": "place_label_other",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "place",
-      "minzoom": 8,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "!in",
-          "class",
-          "city",
-          "state",
-          "country",
-          "continent"
-        ]
-      ],
-      "layout": {
-        "text-anchor": "center",
-        "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-max-width": 6,
-        "text-size": {
-          "stops": [
-            [
-              6,
-              10
-            ],
-            [
-              12,
-              14
-            ]
-          ]
-        },
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 25%)",
-        "text-halo-blur": 0,
-        "text-halo-color": "hsl(0, 0%, 100%)",
-        "text-halo-width": 2
-      }
-    },
-    {
-      "id": "place_label_city",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "place",
-      "maxzoom": 16,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "class",
-          "city"
-        ]
-      ],
-      "layout": {
-        "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-max-width": 10,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              12
-            ],
-            [
-              8,
-              16
-            ]
-          ]
-        }
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 0%)",
-        "text-halo-blur": 0,
-        "text-halo-color": "hsla(0, 0%, 100%, 0.75)",
-        "text-halo-width": 2
-      }
-    },
-    {
-      "id": "country_label-other",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "place",
-      "maxzoom": 12,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "class",
-          "country"
-        ],
-        [
-          "!has",
-          "iso_a2"
-        ]
-      ],
-      "layout": {
-        "text-field": "{name:latin}",
-        "text-font": [
-          "Noto Sans Regular"
-        ],
-        "text-max-width": 10,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              12
-            ],
-            [
-              8,
-              22
-            ]
-          ]
-        },
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 13%)",
-        "text-halo-blur": 0,
-        "text-halo-color": "rgba(255,255,255,0.75)",
-        "text-halo-width": 2
-      }
-    },
-    {
-      "id": "country_label",
-      "type": "symbol",
-      "source": "openmaptiles",
-      "source-layer": "place",
-      "maxzoom": 12,
-      "filter": [
-        "all",
-        [
-          "==",
-          "$type",
-          "Point"
-        ],
-        [
-          "==",
-          "class",
-          "country"
-        ],
-        [
-          "has",
-          "iso_a2"
-        ]
-      ],
-      "layout": {
-        "text-field": "{name:latin}",
-        "text-font": [
-          "Noto Sans Bold"
-        ],
-        "text-max-width": 10,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              12
-            ],
-            [
-              8,
-              22
-            ]
-          ]
-        },
-        "visibility": "visible"
-      },
-      "paint": {
-        "text-color": "hsl(0, 0%, 13%)",
-        "text-halo-blur": 0,
-        "text-halo-color": "rgba(255,255,255,0.75)",
         "text-halo-width": 2
       }
     },
