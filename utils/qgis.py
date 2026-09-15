@@ -39,7 +39,7 @@ versatiles_neutrino = 'https://raw.githubusercontent.com/opengeoshub/vstyles/mai
 #####################################################################
 
 #####################################################################
-vgrid_url='https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vietnam/{z}/{x}/{y}.pbf'
+vgrid_url='https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf'
 vgrid_bright = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/bright/style.json'
 #####################################################################
 

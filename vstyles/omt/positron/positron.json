@@ -34,7 +34,7 @@
       "maxzoom": 6,
       "tileSize": 256,
       "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/ne_grey/{z}/{x}/{y}.png"
+        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.png"
       ],
       "type": "raster"
     },

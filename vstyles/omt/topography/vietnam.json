@@ -2,7 +2,7 @@
     "tilejson": "2.2.0",
     "scheme": "xyz",
     "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vietnam/{z}/{x}/{y}.pbf"
+        "https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf"
     ],
     "attribution": "<a href=\"https://www.maptiler.com/copyright/\" target=\"_blank\">&copy; MapTiler</a> <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\">&copy; OpenStreetMap contributors</a>",
     "bounds": [

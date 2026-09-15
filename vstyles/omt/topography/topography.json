@@ -34,7 +34,7 @@
     "openmaptiles": {
       "type": "vector",
       "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vietnam/{z}/{x}/{y}.pbf"
+        "https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
       "maxzoom": 14
