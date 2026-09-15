@@ -4,7 +4,7 @@
     "protomaps": {
       "type": "vector",
       "tiles": [
-        "https://pmtiles.sovereignsolutions.app/vietnam/{z}/{x}/{y}.mvt"
+        "https://tiles.gishub.vn/vietnam.pmtiles"
       ],
       "minzoom": 0,
       "maxzoom": 14,
@@ -13,7 +13,7 @@
     "vn_islands": {
         "type": "vector",
         "tiles": [
-          "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vn_islands/{z}/{x}/{y}.pbf"
+          "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
           
         ],
         "minzoom": 0,
@@ -10892,6 +10892,6 @@
         }
       }
   ],
-  "sprite": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/ptm/light/sprite",
-  "glyphs": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf"
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/ptm/light/sprite",
+  "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf"
 }

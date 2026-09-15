@@ -19,8 +19,8 @@
       "maxzoom": 14
     }
   },
-  "sprite": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/omt/topography/sprite",
-  "glyphs": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/topography/sprite",
+  "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
   "layers": [ 
     {
       "id": "vn_islands",

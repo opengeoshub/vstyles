@@ -12,12 +12,12 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key={key}"
+      "tiles": ["https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf"]
     },
     "vn_islands": {
       "type": "vector",
       "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vn_islands/{z}/{x}/{y}.pbf"
+        "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
       "maxzoom": 14
@@ -25,7 +25,7 @@
   },
  
 
-  "glyphs": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
+  "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
 
   "layers": [
     {

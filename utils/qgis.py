@@ -6,52 +6,52 @@ esri_contour = 'https://basemaps.arcgis.com/arcgis/rest/services/World_Contours_
 esri_hillshade = 'https://basemaps.arcgis.com/arcgis/rest/services/World_Hillshade_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf'
 esri_osm = 'https://basemaps.arcgis.com/arcgis/rest/services/OpenStreetMap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf'
 
-esri_coloredpencil = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/esri_coloredpencil.json'
-esri_contour = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/esri_contour.json'
-esri_dark = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/esri_dark.json'
-esri_mordern_antique = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/esri_modern_antique.json'
-esri_nova= 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/esri_nova.json'
-esri_night = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/esri_night.json'
-esri_topography = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/esri_topography.json'
+esri_coloredpencil = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/esri_coloredpencil.json'
+esri_contour = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/esri_contour.json'
+esri_dark = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/esri_dark.json'
+esri_mordern_antique = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/esri_modern_antique.json'
+esri_nova= 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/esri_nova.json'
+esri_night = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/esri_night.json'
+esri_topography = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/esri_topography.json'
 esri_hillshade = 'https://basemaps.arcgis.com/arcgis/rest/services/World_Hillshade_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf'
-# esri_watercolor = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/esri_watercolor.json'
-# esri_blueprint = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_blueprint.json'
-# esri_dark_grey_base = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_darkgrey_base.json'
-# esri_dark_grey_ref = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_darkgrey_ref.json'
-# esri_osm_hybrid = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_hybrid_ref.json'
-# esri_lightgrey = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_lightgrey_base.json'
-# esri_relief = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_relief.json'
-# esri_osm_standard = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_standard.json'
-# esri_osm_street = 'https://raw.githubusercontent.com/thangqd/vstyles/main/esri/osm_street.json'
+# esri_watercolor = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/esri_watercolor.json'
+# esri_blueprint = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/osm_blueprint.json'
+# esri_dark_grey_base = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/osm_darkgrey_base.json'
+# esri_dark_grey_ref = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/osm_darkgrey_ref.json'
+# esri_osm_hybrid = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/osm_hybrid_ref.json'
+# esri_lightgrey = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/osm_lightgrey_base.json'
+# esri_relief = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/osm_relief.json'
+# esri_osm_standard = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/osm_standard.json'
+# esri_osm_street = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/esri/osm_street.json'
 
 #####################################################################
 # maplibre_url='https://demotiles.maplibre.org/tiles-omt/{z}/{x}/{y}.pbf'
 # # maplibre_url = 'https://demotiles.maplibre.org/tiles/{z}/{x}/{y}.pbf'
-# maplibre_world = 'https://raw.githubusercontent.com/thangqd/vstyles/main/maplibre/world.json'
-# maplibre_omt = 'https://raw.githubusercontent.com/thangqd/vstyles/main/openmaptiles/bright.json'
+# maplibre_world = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/maplibre/world.json'
+# maplibre_omt = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/openmaptiles/bright.json'
 #####################################################################
 
 #####################################################################
 versatiles_url='https://tiles.versatiles.org/tiles/osm/{z}/{x}/{y}'
-versatiles_colorful = 'https://raw.githubusercontent.com/thangqd/vstyles/main/versatiles/colorful.json'
-versatiles_eclipse = 'https://raw.githubusercontent.com/thangqd/vstyles/main/versatiles/eclipse.json'
-versatiles_neutrino = 'https://raw.githubusercontent.com/thangqd/vstyles/main/versatiles/neutrino.json'
+versatiles_colorful = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/versatiles/colorful.json'
+versatiles_eclipse = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/versatiles/eclipse.json'
+versatiles_neutrino = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/versatiles/neutrino.json'
 #####################################################################
 
 #####################################################################
 vgrid_url='https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vietnam/{z}/{x}/{y}.pbf'
-vgrid_bright = 'https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/bright/style.json'
+vgrid_bright = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/bright/style.json'
 #####################################################################
 
 #####################################################################
-omt_basic = 'https://raw.githubusercontent.com/thangqd/vstyles/main/openmaptiles/basic.json'
-omt_dark = 'https://raw.githubusercontent.com/thangqd/vstyles/main/openmaptiles/dark.json'
-omt_fiord = 'https://raw.githubusercontent.com/thangqd/vstyles/main/openmaptiles/fiord.json'
-omt_liberty = 'https://raw.githubusercontent.com/thangqd/vstyles/main/openmaptiles/osmliberty.json'
-omt_liberty_topo = 'https://raw.githubusercontent.com/thangqd/vstyles/main/openmaptiles/osmlibertytopo.json'
-omt_positron = 'https://raw.githubusercontent.com/thangqd/vstyles/main/openmaptiles/positron.json'
-# mot_terrain = 'https://raw.githubusercontent.com/thangqd/vstyles/refs/heads/main/openmaptiles/terrain.json'
-omt_toner = 'https://raw.githubusercontent.com/thangqd/vstyles/refs/heads/main/openmaptiles/toner.json'
+omt_basic = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/openmaptiles/basic.json'
+omt_dark = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/openmaptiles/dark.json'
+omt_fiord = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/openmaptiles/fiord.json'
+omt_liberty = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/openmaptiles/osmliberty.json'
+omt_liberty_topo = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/openmaptiles/osmlibertytopo.json'
+omt_positron = 'https://raw.githubusercontent.com/opengeoshub/vstyles/main/openmaptiles/positron.json'
+# mot_terrain = 'https://raw.githubusercontent.com/opengeoshub/vstyles/refs/heads/main/openmaptiles/terrain.json'
+omt_toner = 'https://raw.githubusercontent.com/opengeoshub/vstyles/refs/heads/main/openmaptiles/toner.json'
 #####################################################################
 
 #####################################################################

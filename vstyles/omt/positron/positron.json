@@ -34,7 +34,7 @@
       "maxzoom": 6,
       "tileSize": 256,
       "tiles": [
-        "https://klokantech.github.io/naturalearthtiles/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png"
+        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/ne_grey/{z}/{x}/{y}.png"
       ],
       "type": "raster"
     },
@@ -47,8 +47,8 @@
       "maxzoom": 14
     }
   },
-  "sprite": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/omt/positron/sprite",
-  "glyphs": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/positron/sprite",
+  "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",

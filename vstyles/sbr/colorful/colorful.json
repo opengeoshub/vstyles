@@ -5,13 +5,13 @@
 		"maputnik:renderer": "mbgljs",
 		"license": "https://creativecommons.org/publicdomain/zero/1.0/"
 	},
-	"glyphs": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
-	"sprite": "https://raw.githubusercontent.com/thangqd/vstyles/main/vstyles/sbr/colorful/sprite",
+	"glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
+	"sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/sbr/colorful/sprite",
 	"sources": {	
 		"vn_islands": {
 			"type": "vector",
 			"tiles": [
-				"https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vn_islands/{z}/{x}/{y}.pbf"
+				"https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
 			],
 			"minzoom": 0,
 			"maxzoom": 14

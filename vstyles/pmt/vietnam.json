@@ -18,7 +18,7 @@
     "scheme": "xyz",
     "tilejson": "3.0.0",
     "tiles": [
-        "https://pmtiles.sovereignsolutions.app/vietnam/{z}/{x}/{y}.mvt"
+        "https://tiles.gishub.vn/vietnam.pmtiles"
     ],
     "vector_layers": [
         {
