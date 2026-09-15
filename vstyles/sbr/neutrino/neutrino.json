@@ -3265,7 +3265,6 @@
 			  "text-writing-mode": ["horizontal"],
 			  "text-size": {"base": 1, "stops": [[4, 12], [19, 20]]},
 			  "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
-			  "icon-image": "vietnam-5",
 			  "icon-allow-overlap": true,
 			  "icon-text-fit": "none",
 			  "symbol-avoid-edges": false,
