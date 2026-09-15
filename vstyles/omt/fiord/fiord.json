@@ -40,6 +40,12 @@
       "tiles": [
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
       ]
+    },
+    "ne_grey": {
+      "type": "raster",
+      "tiles": [
+        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
+      ]
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",
@@ -50,6 +56,18 @@
       "type": "background",
       "paint": {
         "background-color": "#45516E"
+      }
+    },
+    {
+      "id": "ne_grey",
+      "type": "raster",
+      "source": "ne_grey",
+      "maxzoom": 6,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 0.1
       }
     },
     {

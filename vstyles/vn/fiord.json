@@ -54,12 +54,8 @@
     "ne_grey": {
       "type": "raster",
       "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/ne_grey/{z}/{x}/  "
-      ],
-      "minzoom": 0,
-      "maxzoom": 14,
-      "scheme": "xyz",
-      "tileSize": 512
+        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
+      ]
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",
