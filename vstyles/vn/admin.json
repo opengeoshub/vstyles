@@ -34,6 +34,14 @@
       ],
       "minzoom": 0,
       "maxzoom": 14
+    },
+    "ocean": {
+      "type": "vector",
+      "tiles": [
+        "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 0,
+      "maxzoom": 8
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
@@ -114,6 +122,19 @@
             ]
           ]
         }
+      }
+    },
+    {
+      "id": "ocean",
+      "type": "fill",
+      "source": "ocean",
+      "source-layer": "ocean",
+      "maxzoom": 8,
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsl(205, 56%, 73%)"
       }
     },
     {
