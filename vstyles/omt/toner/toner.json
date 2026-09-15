@@ -28,7 +28,7 @@
     "vn_islands": {
       "type": "vector",
       "tiles": [
-        "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
+        "https://api.maptiler.com/tiles/v3/tiles.json?key={key}"
       ]
     },
     "ne_grey": {

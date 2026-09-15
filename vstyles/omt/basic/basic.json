@@ -12,7 +12,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "tiles": ["https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf"]
+      "tiles": ["https://api.maptiler.com/tiles/v3/tiles.json?key={key}"]
     },
     "vn_islands": {
       "type": "vector",
