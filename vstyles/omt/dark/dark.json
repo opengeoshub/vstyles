@@ -2117,7 +2117,7 @@
       "source": "vn_islands",
       "source-layer": "vn_islands",
       "paint": {
-        "fill-color": "rgb(64, 75, 101)",
+        "fill-color": "#0c0c0c",
         "fill-opacity": 1
       }
     },
