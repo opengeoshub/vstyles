@@ -13,7 +13,7 @@
     "vn_islands": {
       "type": "vector",
       "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vn_islands/{z}/{x}/{y}.pbf"
+        "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
       "maxzoom": 14

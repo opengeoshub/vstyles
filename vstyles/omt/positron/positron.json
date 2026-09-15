@@ -1128,7 +1128,7 @@
       "source-layer": "vn_islands_point",
       "minzoom": 6,
       "layout": {
-        "text-field": "{name}",
+        "text-field": "{islandname}",
         "text-max-width": 10,
         "text-writing-mode": ["horizontal"],
         "text-size": {"base": 1, "stops": [[4, 10], [19, 18]]}

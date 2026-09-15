@@ -2,9 +2,9 @@
     "tilejson": "2.2.0",
     "scheme": "xyz",
     "tiles": [
-      "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/vn_islands/{z}/{x}/{y}.pbf"
+      "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
     ],
-    "attribution": "Techcraft",
+    "attribution": "Open Geospatial Hub",
     "center": [113.2361, 10.7092, 7],
     "description": "Vietnam Islands",
     "format": "pbf",
@@ -18,10 +18,7 @@
         "fields": {
           "area": "Number",
           "code": "String",
-          "dist_code": "String",
-          "dist_name": "String",
           "islandname": "String",
-          "islandname_1": "String",
           "level": "String",
           "name": "String",
           "prov_code": "String",
@@ -46,7 +43,6 @@
           "dist_code": "String",
           "dist_name": "String",
           "islandname": "String",
-          "islandname_1": "String",
           "level": "String",
           "name": "String",
           "prov_code": "String",
