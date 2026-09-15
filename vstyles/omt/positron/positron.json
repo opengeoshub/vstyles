@@ -21,30 +21,27 @@
     "maputnik:renderer": "mlgljs"
   },
   "sources": {
-      "openmaptiles": {
+    "openmaptiles": {
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf"
-      ],
-      "minzoom": 0,
-      "maxzoom": 14,
-      "scheme": "xyz"
-    },
-    "ne_grey": {
-      "maxzoom": 6,
-      "tileSize": 256,
-      "tiles": [
-        "https://map-api-new.sovereignsolutions.net/sovereign/v20240410/ne_grey/{z}/{x}/{y}.png"
-      ],
-      "type": "raster"
+      ]
     },
     "vn_islands": {
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
+      ]
+    },
+    "ne_grey": {
+      "type": "raster",
+      "tiles": [
+        " https://map-api-new.sovereignsolutions.net/sovereign/v20240410/ne_grey/{z}/{x}/{y}.png"
       ],
       "minzoom": 0,
-      "maxzoom": 14
+      "maxzoom": 6,
+      "scheme": "xyz",
+      "tileSize": 512
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/positron/sprite",
@@ -53,20 +50,25 @@
     {
       "id": "background",
       "type": "background",
-      "paint": {"background-color": "rgb(242,243,240)"}
+      "layout": {"visibility": "visible"},
+      "paint": {"background-color": "rgb(242,243,240)", "background-opacity": 1}
     },
     {
-      "id": "natural_earth",
+      "id": "ne_grey",
       "type": "raster",
       "source": "ne_grey",
       "maxzoom": 6,
-      "paint": {"raster-opacity": {"base": 1.5, "stops": [[0, 0.6], [6, 0.1]]}}
+      "layout": {"visibility": "visible"},
+      "paint": {
+        "raster-opacity": ["interpolate", ["linear"], ["zoom"], 0, 0.1, 6, 0.4]
+      }
     },
     {
       "id": "park",
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "park",
+      "minzoom": 6,
       "filter": ["==", "$type", "Polygon"],
       "layout": {"visibility": "visible"},
       "paint": {"fill-color": "rgb(230, 233, 229)"}
@@ -109,7 +111,7 @@
         ["==", "$type", "Polygon"],
         ["==", "subclass", "glacier"]
       ],
-      "layout": {"visibility": "visible"},
+      "layout": {"visibility": "none"},
       "paint": {
         "fill-color": "hsl(0, 0%, 98%)",
         "fill-opacity": {"base": 1, "stops": [[0, 1], [8, 0.5]]}
@@ -164,7 +166,7 @@
         "symbol-placement": "line",
         "symbol-spacing": 500,
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Italic"],
+        "text-font": ["Metropolis Medium Italic", "Noto Sans Italic"],
         "text-rotation-alignment": "map",
         "text-size": 12
       },
@@ -181,6 +183,7 @@
       "source": "openmaptiles",
       "source-layer": "building",
       "minzoom": 12,
+      "layout": {"visibility": "visible"},
       "paint": {
         "fill-antialias": true,
         "fill-color": "rgb(234, 234, 229)",
@@ -688,7 +691,7 @@
         "symbol-placement": "line",
         "symbol-spacing": 350,
         "text-field": "{name:latin} {name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-max-angle": 30,
         "text-pitch-alignment": "viewport",
         "text-rotation-alignment": "map",
@@ -719,7 +722,7 @@
         "symbol-placement": "line",
         "symbol-spacing": 350,
         "text-field": "{ref}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Light", "Noto Sans Regular"],
         "text-pitch-alignment": "viewport",
         "text-rotation-alignment": "viewport",
         "text-size": 10,
@@ -807,12 +810,12 @@
       "layout": {
         "text-anchor": "center",
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "center",
         "text-offset": [0.5, 0],
         "text-size": 10,
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "rgb(117, 129, 145)",
@@ -832,12 +835,12 @@
       "layout": {
         "text-anchor": "center",
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "center",
         "text-offset": [0.5, 0],
         "text-size": 10,
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "rgb(117, 129, 145)",
@@ -858,12 +861,12 @@
         "icon-size": 0.4,
         "text-anchor": "left",
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "left",
         "text-offset": [0.5, 0.2],
         "text-size": 10,
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "icon-opacity": 0.7,
@@ -886,12 +889,12 @@
         "icon-size": 0.4,
         "text-anchor": {"base": 1, "stops": [[0, "left"], [8, "center"]]},
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "left",
         "text-offset": [0.5, 0.2],
         "text-size": 10,
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "icon-opacity": 0.7,
@@ -918,12 +921,12 @@
         "icon-size": 0.4,
         "text-anchor": {"base": 1, "stops": [[0, "left"], [8, "center"]]},
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "left",
         "text-offset": [0.5, 0.2],
         "text-size": 10,
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "icon-opacity": 0.7,
@@ -950,12 +953,12 @@
         "icon-size": 1,
         "text-anchor": {"base": 1, "stops": [[0, "left"], [8, "center"]]},
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "left",
         "text-offset": [0.5, 0.2],
         "text-size": 14,
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "icon-opacity": 0.7,
@@ -987,12 +990,12 @@
         "icon-size": 0.4,
         "text-anchor": {"base": 1, "stops": [[0, "left"], [8, "center"]]},
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-justify": "left",
         "text-offset": [0.5, 0.2],
         "text-size": 14,
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "icon-opacity": 0.7,
@@ -1012,10 +1015,10 @@
       "filter": ["all", ["==", "$type", "Point"], ["==", "class", "state"]],
       "layout": {
         "text-field": "{name:latin}\n{name:nonlatin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-size": 10,
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": "rgb(113, 129, 144)",
@@ -1039,10 +1042,10 @@
       ],
       "layout": {
         "text-field": "{name:latin}",
-        "text-font": ["Noto Sans Italic"],
+        "text-font": ["Metropolis Light Italic", "Noto Sans Italic"],
         "text-size": {"base": 1, "stops": [[0, 9], [6, 11]]},
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": {
@@ -1069,10 +1072,10 @@
       ],
       "layout": {
         "text-field": "{name:latin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-size": {"base": 1, "stops": [[0, 10], [6, 12]]},
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": {
@@ -1100,10 +1103,10 @@
       "layout": {
         "text-anchor": "center",
         "text-field": "{name:latin}",
-        "text-font": ["Noto Sans Regular"],
+        "text-font": ["Metropolis Regular", "Noto Sans Regular"],
         "text-size": {"base": 1.4, "stops": [[0, 10], [3, 12], [4, 14]]},
         "text-transform": "uppercase",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": {
@@ -1119,7 +1122,7 @@
       "type": "fill",
       "source": "vn_islands",
       "source-layer": "vn_islands",
-      "paint": {"fill-color": "rgb(234, 234, 230)", "fill-opacity": 1}
+      "paint": {"fill-color": "rgb(64, 75, 101)", "fill-opacity": 1}
     },
     {
       "id": "vn_islands_point",
@@ -1128,7 +1131,7 @@
       "source-layer": "vn_islands_point",
       "minzoom": 6,
       "layout": {
-        "text-field": "{islandname}",
+        "text-field": "{name}",
         "text-max-width": 10,
         "text-writing-mode": ["horizontal"],
         "text-size": {"base": 1, "stops": [[4, 10], [19, 18]]}

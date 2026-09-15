@@ -27,18 +27,13 @@
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf"
-      ],
-      "minzoom": 0,
-      "maxzoom": 14,
-      "scheme": "xyz"
+      ]
     },
     "vn_islands": {
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
-      ],
-      "minzoom": 0,
-      "maxzoom": 14
+      ]
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",

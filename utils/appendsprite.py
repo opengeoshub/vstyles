@@ -1,13 +1,25 @@
 import json
+from pathlib import Path
 from PIL import Image
 
+# Resolve paths from repo root so the script works from any cwd
+ROOT = Path(__file__).resolve().parent.parent
+
+
 def merge_sprites_and_json(sprite_image_1_path, json_1_path, sprite_image_2_path, json_2_path, output_image_path, output_json_path):
+    sprite_image_1_path = ROOT / sprite_image_1_path
+    json_1_path = ROOT / json_1_path
+    sprite_image_2_path = ROOT / sprite_image_2_path
+    json_2_path = ROOT / json_2_path
+    output_image_path = ROOT / output_image_path
+    output_json_path = ROOT / output_json_path
+
     # Open the sprite images
     image1 = Image.open(sprite_image_1_path)
     image2 = Image.open(sprite_image_2_path)
 
     # Load the JSON files
-    with open(json_1_path, 'r') as f1, open(json_2_path, 'r') as f2:
+    with open(json_1_path, 'r', encoding='utf-8') as f1, open(json_2_path, 'r', encoding='utf-8') as f2:
         sprite_json_1 = json.load(f1)
         sprite_json_2 = json.load(f2)
 
@@ -33,7 +45,7 @@ def merge_sprites_and_json(sprite_image_1_path, json_1_path, sprite_image_2_path
     merged_image.save(output_image_path)
 
     # Save the merged JSON
-    with open(output_json_path, 'w') as f_out:
+    with open(output_json_path, 'w', encoding='utf-8') as f_out:
         json.dump(merged_json, f_out, indent=4)
 
     print(f"Merged sprite image saved as {output_image_path}")
@@ -41,12 +53,10 @@ def merge_sprites_and_json(sprite_image_1_path, json_1_path, sprite_image_2_path
 
 # Example usage
 merge_sprites_and_json(
-    sprite_image_1_path='./vstyles/ptm/dark/sprite@2x.png',
-    json_1_path='./vstyles/ptm/dark/sprite@2x.json',
-   
-    sprite_image_2_path='./vstyles/vnsprite/sprite@2x.png',
-    json_2_path='./vstyles/vnsprite/sprite@2x.json',
-   
-    output_image_path='./vstyles/ptm/dark/sprite@2x.png',
-    output_json_path='./vstyles/ptm/dark/sprite@2x.json'
+    sprite_image_1_path='vstyles/omt/liberty/sprite.png',
+    json_1_path='vstyles/omt/liberty/sprite.json',
+    sprite_image_2_path='vstyles/vnsprite/sprite.png',
+    json_2_path='vstyles/vnsprite/sprite.json',
+    output_image_path='vstyles/omt/liberty/sprite_vn.png',
+    output_json_path='vstyles/omt/liberty/sprite@_vn.json',
 )
