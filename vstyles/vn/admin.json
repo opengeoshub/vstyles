@@ -2090,21 +2090,21 @@
           "ward_name"
         ],
         "text-font": [
-          "Open Sans Bold"
+          "Open Sans Regular"
         ],
         "text-size": {
           "stops": [
             [
               8,
-              13
+              10
             ],
             [
               12,
-              16
+              12
             ],
             [
-              14,
-              18
+              16,
+              14
             ]
           ]
         },
