@@ -374,10 +374,25 @@
           "#bc80bd",
           "#cccccc"
         ],
-        "fill-opacity": 0.55,
-        "fill-outline-color": "rgba(0,0,0,0.2)"
+        "fill-opacity": 0.55
       },
       "maxzoom": 14
+    },
+    {
+      "id": "vn_wards_outline",
+      "type": "line",
+      "source": "vn_admin",
+      "source-layer": "vn_wards",
+      "minzoom": 7,
+      "maxzoom": 14,
+      "paint": {
+        "line-color": "#333333",
+        "line-width": 1,
+        "line-dasharray": [
+          3,
+          2
+        ]
+      }
     },
     {
       "id": "vn_provinces_outline",
@@ -2075,21 +2090,21 @@
           "ward_name"
         ],
         "text-font": [
-          "Open Sans Regular"
+          "Open Sans Bold"
         ],
         "text-size": {
           "stops": [
             [
               8,
-              10
+              13
             ],
             [
               12,
-              12
+              16
             ],
             [
-              16,
-              14
+              14,
+              18
             ]
           ]
         },
