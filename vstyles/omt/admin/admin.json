@@ -1510,6 +1510,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         [
@@ -1567,6 +1568,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         [
@@ -1627,6 +1629,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         [
@@ -1670,7 +1673,8 @@
       "id": "bridge_major",
       "type": "line",
       "source": "openmaptiles",
-      "source-layer": "transportation",
+      "source-layer": "transportation", 
+      "minzoom": 13,
       "filter": [
         "all",
         [
