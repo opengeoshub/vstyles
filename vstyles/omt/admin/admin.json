@@ -281,9 +281,20 @@
           "#bc80bd",
           "#cccccc"
         ],
-        "fill-opacity": 0.45
-      },
-      "maxzoom": 14
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.45,
+          14,
+          0
+        ]
+      }
     },
     {
       "id": "vn_wards",
@@ -371,9 +382,20 @@
           "#bc80bd",
           "#cccccc"
         ],
-        "fill-opacity": 0.45
-      },
-      "maxzoom": 14
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.45,
+          14,
+          0
+        ]
+      }
     },
     {
       "id": "water_intermittent",

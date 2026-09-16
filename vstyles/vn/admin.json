@@ -201,7 +201,6 @@
       "type": "fill",
       "source": "vn_admin",
       "source-layer": "vn_provinces",
-      "maxzoom": 14,
       "paint": {
         "fill-color": [
           "match",
@@ -282,7 +281,19 @@
           "#bc80bd",
           "#cccccc"
         ],
-        "fill-opacity": 0.45
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.45,
+          14,
+          0
+        ]
       }
     },
     {
@@ -291,7 +302,6 @@
       "source": "vn_admin",
       "source-layer": "vn_wards",
       "minzoom": 8,
-      "maxzoom": 14,
       "paint": {
         "fill-color": [
           "match",
@@ -372,7 +382,19 @@
           "#bc80bd",
           "#cccccc"
         ],
-        "fill-opacity": 0.45
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.45,
+          14,
+          0
+        ]
       }
     },
     {
