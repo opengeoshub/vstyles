@@ -371,7 +371,50 @@
           "#bc80bd",
           "#cccccc"
         ],
-        "fill-opacity": 0.55
+        "fill-opacity": 0.45
+      },
+      "maxzoom": 14
+    },
+    {
+      "id": "vn_wards_outline",
+      "type": "line",
+      "source": "vn_admin",
+      "source-layer": "vn_wards",
+      "minzoom": 8,
+      "maxzoom": 14,
+      "paint": {
+        "line-color": "#333333",
+        "line-width": 1,
+        "line-dasharray": [
+          8,
+          6
+        ]
+      }
+    },
+    {
+      "id": "vn_provinces_outline",
+      "type": "line",
+      "source": "vn_admin",
+      "source-layer": "vn_provinces",
+      "paint": {
+        "line-color": "#333333",
+        "line-width": {
+          "stops": [
+            [
+              4,
+              0.8
+            ],
+            [
+              8,
+              1.5
+            ],
+            [
+              12,
+              2.5
+            ]
+          ]
+        },
+        "line-opacity": 0.85
       },
       "maxzoom": 14
     },
@@ -774,6 +817,7 @@
       "metadata": {},
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         [
@@ -800,7 +844,8 @@
       "type": "line",
       "metadata": {},
       "source": "openmaptiles",
-      "source-layer": "transportation",
+      "source-layer": "transportation", 
+      "minzoom": 14,
       "filter": [
         "all",
         [
@@ -840,6 +885,7 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         [
@@ -864,6 +910,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         [
@@ -908,7 +955,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 15,
       "filter": [
         "all",
         [
@@ -1181,6 +1228,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 13,
       "filter": [
         "all",
         [
@@ -1221,6 +1269,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         [
@@ -1261,6 +1310,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
+      "minzoom": 14,
       "filter": [
         "all",
         [
@@ -1831,7 +1881,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation_name",
-      "minzoom": 13,
+      "minzoom": 14,
       "filter": [
         "==",
         "$type",
@@ -2032,49 +2082,6 @@
           ]
         }
       }
-    },
-    {
-      "id": "vn_wards_outline",
-      "type": "line",
-      "source": "vn_admin",
-      "source-layer": "vn_wards",
-      "minzoom": 8,
-      "maxzoom": 14,
-      "paint": {
-        "line-color": "#333333",
-        "line-width": 1,
-        "line-dasharray": [
-          8,
-          6
-        ]
-      }
-    },
-    {
-      "id": "vn_provinces_outline",
-      "type": "line",
-      "source": "vn_admin",
-      "source-layer": "vn_provinces",
-      "paint": {
-        "line-color": "#333333",
-        "line-width": {
-          "stops": [
-            [
-              4,
-              0.8
-            ],
-            [
-              8,
-              1.5
-            ],
-            [
-              12,
-              2.5
-            ]
-          ]
-        },
-        "line-opacity": 0.85
-      },
-      "maxzoom": 14
     },
     {
       "id": "vn_wards_name",
