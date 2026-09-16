@@ -389,8 +389,8 @@
         "line-color": "#333333",
         "line-width": 1,
         "line-dasharray": [
-          3,
-          2
+          8,
+          6
         ]
       }
     },
