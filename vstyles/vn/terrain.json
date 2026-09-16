@@ -52,7 +52,7 @@
         "https://tiles.gishub.vn/ne_blended/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
-      "maxzoom": 6
+      "maxzoom": 8
     },
     "esri": {
       "type": "vector",
@@ -81,7 +81,7 @@
       "id": "hillshading",
       "type": "raster",
       "source": "hillshading",
-      "maxzoom": 10,
+      "maxzoom": 8,
       "layout": {
         "visibility": "visible"
       },
@@ -96,8 +96,8 @@
           ],
           0,
           0.6,
-          6,
-          0.1
+          8,
+          0
         ]
       }
     },
