@@ -2082,7 +2082,7 @@
       "id": "vn_wards_name",
       "type": "symbol",
       "source": "vn_admin",
-      "source-layer": "vn_wards",
+      "source-layer": "vn_wards_point",
       "minzoom": 8,
       "layout": {
         "text-field": [
@@ -2125,7 +2125,7 @@
       "id": "vn_provinces_name",
       "type": "symbol",
       "source": "vn_admin",
-      "source-layer": "vn_provinces",
+      "source-layer": "vn_provinces_point",
       "minzoom": 4,
       "layout": {
         "text-field": [
