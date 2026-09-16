@@ -376,49 +376,6 @@
       "maxzoom": 14
     },
     {
-      "id": "vn_wards_outline",
-      "type": "line",
-      "source": "vn_admin",
-      "source-layer": "vn_wards",
-      "minzoom": 8,
-      "maxzoom": 14,
-      "paint": {
-        "line-color": "#333333",
-        "line-width": 1,
-        "line-dasharray": [
-          8,
-          6
-        ]
-      }
-    },
-    {
-      "id": "vn_provinces_outline",
-      "type": "line",
-      "source": "vn_admin",
-      "source-layer": "vn_provinces",
-      "paint": {
-        "line-color": "#333333",
-        "line-width": {
-          "stops": [
-            [
-              4,
-              0.8
-            ],
-            [
-              8,
-              1.5
-            ],
-            [
-              12,
-              2.5
-            ]
-          ]
-        },
-        "line-opacity": 0.85
-      },
-      "maxzoom": 14
-    },
-    {
       "id": "water_intermittent",
       "type": "fill",
       "source": "openmaptiles",
@@ -2075,6 +2032,49 @@
           ]
         }
       }
+    },
+    {
+      "id": "vn_wards_outline",
+      "type": "line",
+      "source": "vn_admin",
+      "source-layer": "vn_wards",
+      "minzoom": 8,
+      "maxzoom": 14,
+      "paint": {
+        "line-color": "#333333",
+        "line-width": 1,
+        "line-dasharray": [
+          8,
+          6
+        ]
+      }
+    },
+    {
+      "id": "vn_provinces_outline",
+      "type": "line",
+      "source": "vn_admin",
+      "source-layer": "vn_provinces",
+      "paint": {
+        "line-color": "#333333",
+        "line-width": {
+          "stops": [
+            [
+              4,
+              0.8
+            ],
+            [
+              8,
+              1.5
+            ],
+            [
+              12,
+              2.5
+            ]
+          ]
+        },
+        "line-opacity": 0.85
+      },
+      "maxzoom": 14
     },
     {
       "id": "vn_wards_name",
