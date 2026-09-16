@@ -39,9 +39,7 @@
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
-      ],
-      "minzoom": 0,
-      "maxzoom": 8
+      ]
     },
     "ne_grey": {
       "type": "raster",
@@ -53,7 +51,7 @@
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
-  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/positron/sprite",
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/vnsprite/sprite",
   "layers": [
     {
       "id": "background",
@@ -161,7 +159,6 @@
       "type": "fill",
       "source": "ocean",
       "source-layer": "ocean",
-      "maxzoom": 8,
       "layout": {
         "visibility": "visible"
       },
@@ -1993,7 +1990,8 @@
         "text-offset": [
           0,
           0.6
-        ]
+        ],
+        "icon-image": "vietnam-5"
       },
       "paint": {
         "text-color": "#000000",

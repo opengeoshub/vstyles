@@ -41,9 +41,7 @@
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
-      ],
-      "minzoom": 0,
-      "maxzoom": 8
+      ]
     },
     "ne_grey": {
       "type": "raster",
@@ -115,7 +113,6 @@
       "type": "fill",
       "source": "ocean",
       "source-layer": "ocean",
-      "maxzoom": 8,
       "layout": {
         "visibility": "visible"
       },
