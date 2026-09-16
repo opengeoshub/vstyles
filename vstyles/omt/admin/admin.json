@@ -293,7 +293,7 @@
       "type": "fill",
       "source": "vn_admin",
       "source-layer": "vn_wards",
-      "minzoom": 7,
+      "minzoom": 9,
       "paint": {
         "fill-color": [
           "match",
@@ -383,7 +383,7 @@
       "type": "line",
       "source": "vn_admin",
       "source-layer": "vn_wards",
-      "minzoom": 7,
+      "minzoom": 9,
       "maxzoom": 14,
       "paint": {
         "line-color": "#333333",
@@ -2083,7 +2083,7 @@
       "type": "symbol",
       "source": "vn_admin",
       "source-layer": "vn_wards_point",
-      "minzoom": 8,
+      "minzoom": 10,
       "layout": {
         "text-field": [
           "get",
