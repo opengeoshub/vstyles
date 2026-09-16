@@ -1228,7 +1228,7 @@
       "type": "line",
       "source": "openmaptiles",
       "source-layer": "transportation",
-      "minzoom": 13,
+      "minzoom": 14,
       "filter": [
         "all",
         [
