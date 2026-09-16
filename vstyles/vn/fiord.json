@@ -53,7 +53,9 @@
       "type": "raster",
       "tiles": [
         "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
-      ]
+      ],
+      "maxzoom": 8,
+      "minzoom": 0
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",
@@ -70,12 +72,24 @@
       "id": "ne_grey",
       "type": "raster",
       "source": "ne_grey",
-      "maxzoom": 6,
+      "maxzoom": 8,
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "raster-opacity": 0.1
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          0.1,
+          8,
+          0
+        ]
       }
     },
     {

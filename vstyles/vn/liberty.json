@@ -13,7 +13,7 @@
         "https://tiles.gishub.vn/ne_blended/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
-      "maxzoom": 6
+      "maxzoom": 8
     },
     "openmaptiles": {
       "type": "vector",
@@ -50,24 +50,24 @@
       "id": "ne_blended",
       "type": "raster",
       "source": "ne_blended",
-      "maxzoom": 6,
+      "maxzoom": 8,
       "layout": {
         "visibility": "visible"
       },
       "paint": {
-        "raster-opacity": {
-          "base": 1.5,
-          "stops": [
-            [
-              0,
-              0.6
-            ],
-            [
-              6,
-              0.1
-            ]
-          ]
-        }
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          0.6,
+          8,
+          0
+        ]
       }
     },
     {

@@ -36,7 +36,7 @@
         "https://tiles.gishub.vn/ne_shaded/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
-      "maxzoom": 6
+      "maxzoom": 8
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
@@ -56,7 +56,7 @@
       "id": "ne_shaded",
       "type": "raster",
       "source": "ne_shaded",
-      "maxzoom": 6,
+      "maxzoom": 8,
       "layout": {
         "visibility": "visible"
       },
@@ -70,9 +70,9 @@
             "zoom"
           ],
           0,
-          1,
-          6,
-          0.1
+          1.0,
+          8,
+          0
         ]
       }
     },

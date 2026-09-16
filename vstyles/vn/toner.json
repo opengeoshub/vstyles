@@ -43,7 +43,7 @@
         "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
-      "maxzoom": 6
+      "maxzoom": 8
     }
   },
   "sprite": "https://openmaptiles.github.io/maptiler-toner-gl-style/sprite",
@@ -74,9 +74,9 @@
             "zoom"
           ],
           0,
-          0.2,
+          0.6,
           8,
-          0.6
+          0
         ]
       }
     },

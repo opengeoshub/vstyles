@@ -43,7 +43,7 @@
         "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
-      "maxzoom": 14,
+      "maxzoom": 8,
       "scheme": "xyz",
       "tileSize": 512
     }
@@ -65,7 +65,7 @@
       "id": "ne_grey",
       "type": "raster",
       "source": "ne_grey",
-      "maxzoom": 6,
+      "maxzoom": 8,
       "layout": {
         "visibility": "visible"
       },
@@ -79,9 +79,9 @@
             "zoom"
           ],
           0,
-          0.1,
-          6,
-          0.3
+          0.3,
+          8,
+          0
         ],
         "raster-brightness-min": 1,
         "raster-brightness-max": 0

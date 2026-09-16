@@ -37,7 +37,7 @@
         "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
       ],
       "minzoom": 0,
-      "maxzoom": 14,
+      "maxzoom": 8,
       "scheme": "xyz",
       "tileSize": 512
     }
@@ -70,9 +70,9 @@
             "zoom"
           ],
           0,
-          0.2,
+          0.6,
           8,
-          0.6
+          0
         ]
       }
     },
