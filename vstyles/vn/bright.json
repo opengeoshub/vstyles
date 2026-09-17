@@ -69,9 +69,9 @@
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
       ]
     },
-    "earth_blended": {
+    "ne2": {
       "type": "raster",
-      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles",     
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/ne2.pmtiles",     
       "minzoom": 0,
       "maxzoom": 6,
       "attribution": "Open Geospatial Hub"
@@ -6357,9 +6357,9 @@
       }
     },
     {
-      "id": "earth_blended",
+      "id": "ne2",
       "type": "raster",
-      "source": "earth_blended",
+      "source": "ne2",
       "layout": {
         "visibility": "visible"
       },
