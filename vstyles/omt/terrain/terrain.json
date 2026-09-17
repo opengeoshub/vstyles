@@ -41,14 +41,6 @@
       ],
       "maxzoom": 12
     },
-    "hillshading": {
-      "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_blended/{z}/{x}/{y}.webp"
-      ],
-      "minzoom": 0,
-      "maxzoom": 8
-    },
     "esri": {
       "type": "vector",
       "tiles": [
@@ -57,6 +49,14 @@
       "minzoom": 0,
       "maxzoom": 14,
       "scheme": "xyz"
+    },
+    "earth_blended": {
+      "type": "raster",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles",
+      "tileSize": 512,
+      "minzoom": 0,
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
@@ -72,10 +72,10 @@
       }
     },
     {
-      "id": "hillshading",
+      "id": "earth_blended",
       "type": "raster",
-      "source": "hillshading",
-      "maxzoom": 8,
+      "source": "earth_blended",
+      "maxzoom": 6,
       "layout": {
         "visibility": "visible"
       },
@@ -90,9 +90,10 @@
           ],
           0,
           0.6,
-          8,
+          6,
           0
-        ]
+        ],
+        "raster-resampling": "linear"
       }
     },
     {
