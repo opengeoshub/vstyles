@@ -68,7 +68,7 @@
       "tiles": [
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
       ],
-      "minzoom": 0,
+      "minzoom": 4,
       "maxzoom": 12
     },
     "ocean": {
