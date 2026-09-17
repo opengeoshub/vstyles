@@ -53,7 +53,8 @@
         "https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
-      "maxzoom": 14
+      "maxzoom": 14,
+      "attribution": "<a href=\"https://openmaptiles.org/\" target=\"_blank\">© OpenMapTiles</a>"
     },
     "vn_islands": {
       "type": "vector",

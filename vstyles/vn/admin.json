@@ -18,7 +18,7 @@
       "minzoom": 0,
       "maxzoom": 14,
       "scheme": "xyz",
-      "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
+      "attribution": "<a href=\"https://openmaptiles.org/\" target=\"_blank\">© OpenMapTiles</a> | <a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     },
     "vn_islands": {
       "type": "vector",

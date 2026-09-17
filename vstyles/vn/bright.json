@@ -53,7 +53,8 @@
         "https://tiles.gishub.vn/vn/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
-      "maxzoom": 14
+      "maxzoom": 14,
+      "attribution": "<a href=\"https://openmaptiles.org/\" target=\"_blank\">© OpenMapTiles</a>"
     },
     "vn_islands": {
       "type": "vector",
@@ -71,7 +72,7 @@
     },
     "ne2": {
       "type": "raster",
-      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/ne2.pmtiles",     
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/ne2.pmtiles",
       "minzoom": 0,
       "maxzoom": 6,
       "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
