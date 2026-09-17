@@ -24,7 +24,7 @@
       ],
       "minzoom": 0,
       "maxzoom": 14,
-      "attribution": "<a href=\"https://openmaptiles.org/\" target=\"_blank\">© OpenMapTiles</a>"
+      "attribution": "<a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a>"
     },
     "vn_islands": {
       "type": "vector",
@@ -48,7 +48,7 @@
       "minzoom": 0,
       "maxzoom": 14,
       "scheme": "xyz",
-      "attribution": "<a href=\"https://www.esri.com/\" target=\"_blank\">© Esri</a>"
+      "attribution": "<a href=\"https://www.esri.com/\" target=\"_blank\">Esri</a>"
     },
     "earth_blended": {
       "type": "raster",
@@ -75,7 +75,7 @@
         "dem-contour://{z}/{x}/{y}?buffer=1&contourLayer=contours&elevationKey=ele&levelKey=level&overzoom=2&thresholds=12*100*500~14*20*100"
       ],
       "maxzoom": 17,
-      "attribution": "<a href=\"https://mapterhorn.com/attribution/\" target=\"_blank\">© Mapterhorn</a>"
+      "attribution": "<a href=\"https://mapterhorn.com/attribution/\" target=\"_blank\">Mapterhorn</a>"
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",

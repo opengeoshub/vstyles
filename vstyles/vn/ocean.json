@@ -17,7 +17,7 @@
       ],
       "minzoom": 0,
       "maxzoom": 14,
-      "attribution": "<a href=\"https://openmaptiles.org/\" target=\"_blank\">© OpenMapTiles</a>"
+      "attribution": "<a href=\"https://openmaptiles.org/\" target=\"_blank\">OpenMapTiles</a>"
     },
     "vn_islands": {
       "type": "vector",
