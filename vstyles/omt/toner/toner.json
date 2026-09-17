@@ -32,9 +32,9 @@
       ],
       "maxzoom": 12
     },
-    "earth_shaded": {
+    "earth_grey": {
       "type": "raster",
-      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_grey.pmtiles",
       "tileSize": 512,
       "minzoom": 0,
       "maxzoom": 6,
@@ -52,10 +52,9 @@
       }
     },
     {
-      "id": "earth_shaded",
+      "id": "earth_grey",
       "type": "raster",
-      "source": "earth_shaded",
-      "maxzoom": 6,
+      "source": "earth_grey",
       "layout": {
         "visibility": "visible"
       },

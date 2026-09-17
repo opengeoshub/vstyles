@@ -39,9 +39,9 @@
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
       ]
     },
-    "earth_shaded": {
+    "earth_grey": {
       "type": "raster",
-      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_grey.pmtiles",
       "minzoom": 0,
       "maxzoom": 6,
       "attribution": "Open Geospatial Hub"
@@ -56,32 +56,7 @@
       "paint": {
         "background-color": "#fff"
       }
-    },
-    {
-      "id": "earth_shaded",
-      "type": "raster",
-      "source": "earth_shaded",
-      "maxzoom": 6,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "raster-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          0,
-          0.5,
-          8,
-          0
-        ],
-        "raster-resampling": "linear"
-      }
-    },
+    },  
     {
       "id": "landcover_grass_fill",
       "type": "fill",
@@ -1828,6 +1803,30 @@
             ]
           ]
         }
+      }
+    },
+    {
+      "id": "earth_grey",
+      "type": "raster",
+      "source": "earth_grey",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          1,
+          8,
+          0
+        ],
+        "raster-resampling": "linear"
       }
     }
   ],
