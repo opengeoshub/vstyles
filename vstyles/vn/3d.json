@@ -35,6 +35,18 @@
       "minzoom": 0,
       "maxzoom": 6,
       "attribution": "Open Geospatial Hub"
+    },
+    "terrainSource": {
+      "type": "raster-dem",
+      "url": "https://tiles.mapterhorn.com/tilejson.json",
+      "attribution": "© Mapterhorn"
+    },
+    "hillshadeSource": {
+      "type": "raster-dem",
+      "url": "https://tiles.mapterhorn.com/tilejson.json",
+      "encoding": "terrarium",
+      "tileSize": 512,
+      "attribution": "© Mapterhorn"
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
