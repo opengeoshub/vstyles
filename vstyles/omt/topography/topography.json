@@ -126,40 +126,6 @@
       }
     },
     {
-      "id": "Spot elevation",
-      "type": "symbol",
-      "source": "esri",
-      "source-layer": "Spot elevation",
-      "minzoom": 0,
-      "layout": {
-        "icon-image": "triangle_11",
-        "icon-padding": 1,
-        "icon-allow-overlap": true,
-        "symbol-avoid-edges": true,
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "text-size": 12,
-        "text-anchor": "bottom-left",
-        "text-max-width": 8,
-        "text-field": "{_name}",
-        "text-allow-overlap": false,
-        "text-padding": 1,
-        "text-offset": [
-          0.31,
-          -0.2
-        ],
-        "text-justify": "left"
-      },
-      "paint": {
-        "text-color": "#4d4321",
-        "text-halo-color": "#F0F0E9",
-        "text-halo-width": 1,
-        "text-halo-blur": 1
-      }
-    },
-    {
       "id": "landcover-glacier",
       "type": "fill",
       "metadata": {
@@ -6770,6 +6736,40 @@
       "paint": {
         "fill-color": "#DFDFDF",
         "fill-antialias": false
+      }
+    },
+    {
+      "id": "Spot elevation",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Spot elevation",
+      "minzoom": 0,
+      "layout": {
+        "icon-image": "triangle_11",
+        "icon-padding": 1,
+        "icon-allow-overlap": true,
+        "symbol-avoid-edges": true,
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-max-width": 8,
+        "text-field": "{_name}",
+        "text-allow-overlap": false,
+        "text-padding": 1,
+        "text-offset": [
+          0.31,
+          -0.2
+        ],
+        "text-justify": "left"
+      },
+      "paint": {
+        "text-color": "#4d4321",
+        "text-halo-color": "#F0F0E9",
+        "text-halo-width": 1,
+        "text-halo-blur": 1
       }
     },
     {
