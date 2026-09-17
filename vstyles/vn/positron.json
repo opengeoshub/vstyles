@@ -50,7 +50,7 @@
       "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
       "minzoom": 0,
       "maxzoom": 6,
-      "attribution": "Open Geospatial Hub"
+      "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/positron/sprite",

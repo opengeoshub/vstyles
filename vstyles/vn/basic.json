@@ -37,7 +37,7 @@
       "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles",
       "minzoom": 0,
       "maxzoom": 6,
-      "attribution": "Open Geospatial Hub"
+      "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",

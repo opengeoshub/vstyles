@@ -56,7 +56,7 @@
       "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_night.pmtiles",
       "minzoom": 0,
       "maxzoom": 7,
-      "attribution": "Open Geospatial Hub"
+      "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",
