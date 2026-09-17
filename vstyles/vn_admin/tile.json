@@ -4,7 +4,7 @@
   "tiles": [
     "https://tiles.gishub.vn/vn_admin/{z}/{x}/{y}.pbf"
   ],
-  "attribution": "Open Geospatial Hub",
+  "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>",
   "center": [
     106.3467,
     16.0,

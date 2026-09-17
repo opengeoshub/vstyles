@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "earth_blended",
+  "name": "earth_night",
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:type": "template",
@@ -23,12 +23,12 @@
       "maxzoom": 6,
       "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     },
-    "earth_blended": {
+    "earth_night": {
       "type": "raster",
-      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_night.pmtiles",
       "tileSize": 512,
       "minzoom": 0,
-      "maxzoom": 6,
+      "maxzoom": 7,
       "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     }
   },
@@ -37,7 +37,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "hsl(205, 40%, 88%)"
+        "background-color": "#0b1026"
       }
     },
     {
@@ -53,9 +53,9 @@
       }
     },
     {
-      "id": "earth_blended",
+      "id": "earth_night",
       "type": "raster",
-      "source": "earth_blended",
+      "source": "earth_night",
       "layout": {
         "visibility": "visible"
       },
@@ -65,5 +65,5 @@
       }
     }
   ],
-  "id": "earth_blended"
+  "id": "earth_night"
 }

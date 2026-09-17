@@ -21,7 +21,7 @@
       "tileSize": 512,
       "minzoom": 0,
       "maxzoom": 6,
-      "attribution": "Open Geospatial Hub"
+      "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     }
   },
   "layers": [

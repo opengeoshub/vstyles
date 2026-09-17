@@ -1,62 +1,66 @@
 {
-    "tilejson": "2.2.0",
-    "scheme": "xyz",
-    "tiles": [
-      "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
-    ],
-    "attribution": "Open Geospatial Hub",
-    "center": [113.2361, 10.7092, 7],
-    "description": "Vietnam Islands",
-    "format": "pbf",
-    "maxzoom": 12,
-    "minzoom": 0,
-    "name": "vn_islands",
-    "vector_layers": [
-      {
-        "id": "vn_islands_point",
-        "description": "",
-        "fields": {
-          "area": "Number",
-          "code": "String",
-          "islandname": "String",
-          "level": "String",
-          "name": "String",
-          "prov_code": "String",
-          "prov_name": "String",
-          "region": "String"
-        }
-      },
-      {
-        "id": "vn_marine",
-        "description": "",
-        "fields": {
-          "gid": "Number",
-          "name": "String"
-        }
-      },
-      {
-        "id": "vn_islands",
-        "description": "",
-        "fields": {
-          "area": "Number",
-          "code": "String",
-          "dist_code": "String",
-          "dist_name": "String",
-          "islandname": "String",
-          "level": "String",
-          "name": "String",
-          "prov_code": "String",
-          "prov_name": "String",
-          "region": "String"
-        }
-      },
-      {
-        "id": "vn_islands_name",
-        "description": "",
-        "fields": {
-          "gid": "Number",
-          "name": "String"
-        }
+  "tilejson": "2.2.0",
+  "scheme": "xyz",
+  "tiles": [
+    "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
+  ],
+  "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>",
+  "center": [
+    113.2361,
+    10.7092,
+    7
+  ],
+  "description": "Vietnam Islands",
+  "format": "pbf",
+  "maxzoom": 12,
+  "minzoom": 0,
+  "name": "vn_islands",
+  "vector_layers": [
+    {
+      "id": "vn_islands_point",
+      "description": "",
+      "fields": {
+        "area": "Number",
+        "code": "String",
+        "islandname": "String",
+        "level": "String",
+        "name": "String",
+        "prov_code": "String",
+        "prov_name": "String",
+        "region": "String"
       }
-    ]
-  }
+    },
+    {
+      "id": "vn_marine",
+      "description": "",
+      "fields": {
+        "gid": "Number",
+        "name": "String"
+      }
+    },
+    {
+      "id": "vn_islands",
+      "description": "",
+      "fields": {
+        "area": "Number",
+        "code": "String",
+        "dist_code": "String",
+        "dist_name": "String",
+        "islandname": "String",
+        "level": "String",
+        "name": "String",
+        "prov_code": "String",
+        "prov_name": "String",
+        "region": "String"
+      }
+    },
+    {
+      "id": "vn_islands_name",
+      "description": "",
+      "fields": {
+        "gid": "Number",
+        "name": "String"
+      }
+    }
+  ]
+}

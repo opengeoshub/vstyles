@@ -16,7 +16,8 @@
         "https://tiles.gishub.vn/vn_admin/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
-      "maxzoom": 12
+      "maxzoom": 12,
+      "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/topography/sprite",
@@ -379,7 +380,7 @@
       "id": "vn_provinces_name",
       "type": "symbol",
       "source": "vn_admin",
-      "source-layer": "vn_provinces_point",   
+      "source-layer": "vn_provinces_point",
       "layout": {
         "text-field": [
           "get",

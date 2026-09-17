@@ -4,7 +4,7 @@
   "tiles": [
     "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles"
   ],
-  "attribution": "Open Geospatial Hub",
+  "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>",
   "center": [
     108.0,
     12.0,

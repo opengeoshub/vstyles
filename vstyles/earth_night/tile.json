@@ -2,7 +2,7 @@
   "tilejson": "2.2.0",
   "scheme": "xyz",
   "tiles": [
-    "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles"
+    "pmtiles://https://tiles.gishub.vn/pmtiles/earth_night.pmtiles"
   ],
   "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>",
   "center": [
@@ -10,11 +10,11 @@
     12.0,
     4
   ],
-  "description": "Earth blended relief over ocean bottom",
+  "description": "Earth night lights over ocean bottom",
   "format": "png",
   "tileSize": 512,
-  "maxzoom": 6,
+  "maxzoom": 7,
   "minzoom": 0,
-  "name": "earth_blended",
+  "name": "earth_night",
   "type": "overlay"
 }

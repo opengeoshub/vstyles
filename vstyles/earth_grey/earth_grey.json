@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "earth_blended",
+  "name": "earth_grey",
   "metadata": {
     "mapbox:autocomposite": false,
     "mapbox:type": "template",
@@ -23,9 +23,9 @@
       "maxzoom": 6,
       "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     },
-    "earth_blended": {
+    "earth_grey": {
       "type": "raster",
-      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_grey.pmtiles",
       "tileSize": 512,
       "minzoom": 0,
       "maxzoom": 6,
@@ -37,7 +37,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "hsl(205, 40%, 88%)"
+        "background-color": "#ffffff"
       }
     },
     {
@@ -53,9 +53,9 @@
       }
     },
     {
-      "id": "earth_blended",
+      "id": "earth_grey",
       "type": "raster",
-      "source": "earth_blended",
+      "source": "earth_grey",
       "layout": {
         "visibility": "visible"
       },
@@ -65,5 +65,5 @@
       }
     }
   ],
-  "id": "earth_blended"
+  "id": "earth_grey"
 }
