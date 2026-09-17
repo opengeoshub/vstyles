@@ -73,19 +73,22 @@
       "type": "vector",
       "tiles": [
         "https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
-      ]
+      ],
+      "attribution": "<a href=\"https://www.esri.com/\" target=\"_blank\">© Esri</a>"
     },
     "contours": {
       "type": "vector",
       "tiles": [
         "https://basemaps.arcgis.com/arcgis/rest/services/World_Contours_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
-      ]
+      ],
+      "attribution": "<a href=\"https://www.esri.com/\" target=\"_blank\">© Esri</a>"
     },
     "hillshade": {
       "type": "vector",
       "tiles": [
         "https://basemaps.arcgis.com/arcgis/rest/services/World_Hillshade_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
-      ]
+      ],
+      "attribution": "<a href=\"https://www.esri.com/\" target=\"_blank\">© Esri</a>"
     },
     "earth_blended": {
       "type": "raster",

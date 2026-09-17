@@ -17,7 +17,8 @@
       ],
       "minzoom": 0,
       "maxzoom": 14,
-      "scheme": "xyz"
+      "scheme": "xyz",
+      "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     },
     "vn_islands": {
       "type": "vector",
@@ -33,7 +34,8 @@
         "https://tiles.gishub.vn/vn_admin/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
-      "maxzoom": 12
+      "maxzoom": 12,
+      "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     },
     "ocean": {
       "type": "vector",
