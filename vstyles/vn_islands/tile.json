@@ -8,7 +8,7 @@
     "center": [113.2361, 10.7092, 7],
     "description": "Vietnam Islands",
     "format": "pbf",
-    "maxzoom": 14,
+    "maxzoom": 12,
     "minzoom": 0,
     "name": "vn_islands",
     "vector_layers": [

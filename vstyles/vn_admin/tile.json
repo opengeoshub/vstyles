@@ -1,0 +1,72 @@
+{
+  "tilejson": "2.2.0",
+  "scheme": "xyz",
+  "tiles": [
+    "https://tiles.gishub.vn/vn_admin/{z}/{x}/{y}.pbf"
+  ],
+  "attribution": "Open Geospatial Hub",
+  "center": [
+    106.3467,
+    16.0,
+    5
+  ],
+  "description": "Vietnam Administrative Boundaries",
+  "format": "pbf",
+  "maxzoom": 12,
+  "minzoom": 0,
+  "name": "vn_admin",
+  "vector_layers": [
+    {
+      "id": "vn_provinces",
+      "description": "",
+      "fields": {
+        "prov_id": "String",
+        "prov_name": "String"
+      }
+    },
+    {
+      "id": "vn_provinces_point",
+      "description": "",
+      "fields": {
+        "prov_id": "String",
+        "prov_name": "String"
+      }
+    },
+    {
+      "id": "vn_wards",
+      "description": "",
+      "fields": {
+        "ward_id": "String",
+        "ward_name": "String",
+        "merge": "String",
+        "office": "String",
+        "type": "String",
+        "level": "Number",
+        "id": "Number",
+        "area": "Number",
+        "pop": "Number",
+        "pop_dense": "Number",
+        "prov_id": "String",
+        "prov_name": "String"
+      }
+    },
+    {
+      "id": "vn_wards_point",
+      "description": "",
+      "fields": {
+        "ward_id": "String",
+        "ward_name": "String",
+        "merge": "String",
+        "office": "String",
+        "type": "String",
+        "level": "Number",
+        "id": "Number",
+        "area": "Number",
+        "pop": "Number",
+        "pop_dense": "Number",
+        "prov_id": "String",
+        "prov_name": "String"
+      }
+    }
+  ]
+}

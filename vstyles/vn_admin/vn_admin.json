@@ -1,0 +1,424 @@
+{
+  "version": 8,
+  "name": "vn_admin",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x",
+    "openmaptiles:mapbox:owner": "openmaptiles",
+    "openmaptiles:mapbox:source:url": "mapbox://openmaptiles.4qljc88t"
+  },
+  "sources": {
+    "vn_admin": {
+      "type": "vector",
+      "tiles": [
+        "https://tiles.gishub.vn/vn_admin/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 0,
+      "maxzoom": 12
+    }
+  },
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/topography/sprite",
+  "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "vn_provinces",
+      "type": "fill",
+      "source": "vn_admin",
+      "source-layer": "vn_provinces",
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "to-string",
+            [
+              "get",
+              "prov_id"
+            ]
+          ],
+          "01",
+          "#e41a1c",
+          "04",
+          "#377eb8",
+          "08",
+          "#4daf4a",
+          "11",
+          "#984ea3",
+          "12",
+          "#ff7f00",
+          "14",
+          "#a65628",
+          "15",
+          "#f781bf",
+          "19",
+          "#999999",
+          "20",
+          "#66c2a5",
+          "22",
+          "#fc8d62",
+          "24",
+          "#8da0cb",
+          "25",
+          "#e78ac3",
+          "31",
+          "#a6d854",
+          "33",
+          "#ffd92f",
+          "37",
+          "#e5c494",
+          "38",
+          "#b3b3b3",
+          "40",
+          "#1b9e77",
+          "42",
+          "#d95f02",
+          "44",
+          "#7570b3",
+          "46",
+          "#e7298a",
+          "48",
+          "#66a61e",
+          "51",
+          "#e6ab02",
+          "52",
+          "#a6761d",
+          "56",
+          "#666666",
+          "66",
+          "#8dd3c7",
+          "68",
+          "#ffffb3",
+          "75",
+          "#bebada",
+          "79",
+          "#fb8072",
+          "80",
+          "#80b1d3",
+          "82",
+          "#fdb462",
+          "86",
+          "#b3de69",
+          "91",
+          "#fccde5",
+          "92",
+          "#d9d9d9",
+          "96",
+          "#bc80bd",
+          "#cccccc"
+        ],
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.45,
+          14,
+          0
+        ]
+      }
+    },
+    {
+      "id": "vn_wards",
+      "type": "fill",
+      "source": "vn_admin",
+      "source-layer": "vn_wards",
+      "minzoom": 8,
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "to-string",
+            [
+              "get",
+              "prov_id"
+            ]
+          ],
+          "01",
+          "#e41a1c",
+          "04",
+          "#377eb8",
+          "08",
+          "#4daf4a",
+          "11",
+          "#984ea3",
+          "12",
+          "#ff7f00",
+          "14",
+          "#a65628",
+          "15",
+          "#f781bf",
+          "19",
+          "#999999",
+          "20",
+          "#66c2a5",
+          "22",
+          "#fc8d62",
+          "24",
+          "#8da0cb",
+          "25",
+          "#e78ac3",
+          "31",
+          "#a6d854",
+          "33",
+          "#ffd92f",
+          "37",
+          "#e5c494",
+          "38",
+          "#b3b3b3",
+          "40",
+          "#1b9e77",
+          "42",
+          "#d95f02",
+          "44",
+          "#7570b3",
+          "46",
+          "#e7298a",
+          "48",
+          "#66a61e",
+          "51",
+          "#e6ab02",
+          "52",
+          "#a6761d",
+          "56",
+          "#666666",
+          "66",
+          "#8dd3c7",
+          "68",
+          "#ffffb3",
+          "75",
+          "#bebada",
+          "79",
+          "#fb8072",
+          "80",
+          "#80b1d3",
+          "82",
+          "#fdb462",
+          "86",
+          "#b3de69",
+          "91",
+          "#fccde5",
+          "92",
+          "#d9d9d9",
+          "96",
+          "#bc80bd",
+          "#cccccc"
+        ],
+        "fill-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          11,
+          0.45,
+          14,
+          0
+        ]
+      }
+    },
+    {
+      "id": "vn_wards_outline",
+      "type": "line",
+      "source": "vn_admin",
+      "source-layer": "vn_wards",
+      "minzoom": 8,
+      "paint": {
+        "line-color": "#333333",
+        "line-width": 1,
+        "line-dasharray": [
+          8,
+          6
+        ]
+      }
+    },
+    {
+      "id": "vn_provinces_outline",
+      "type": "line",
+      "source": "vn_admin",
+      "source-layer": "vn_provinces",
+      "paint": {
+        "line-color": "#333333",
+        "line-width": {
+          "stops": [
+            [
+              4,
+              0.8
+            ],
+            [
+              8,
+              1.5
+            ],
+            [
+              12,
+              2.5
+            ]
+          ]
+        },
+        "line-opacity": 0.85
+      }
+    },
+    {
+      "id": "vn_wards_name",
+      "type": "symbol",
+      "source": "vn_admin",
+      "source-layer": "vn_wards_point",
+      "minzoom": 9,
+      "filter": [
+        "!=",
+        [
+          "slice",
+          [
+            "get",
+            "ward_name"
+          ],
+          0,
+          8
+        ],
+        "Đặc khu "
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "ward_name"
+        ],
+        "text-font": [
+          "Open Sans Bold"
+        ],
+        "text-size": {
+          "stops": [
+            [
+              8,
+              10
+            ],
+            [
+              12,
+              12
+            ],
+            [
+              16,
+              14
+            ]
+          ]
+        },
+        "text-max-width": 8,
+        "text-anchor": "center",
+        "text-justify": "center",
+        "text-padding": 2,
+        "symbol-placement": "point"
+      },
+      "paint": {
+        "text-color": "#222222",
+        "text-halo-color": "rgba(255,255,255,0.9)",
+        "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "vn_wards_name_dac_khu",
+      "type": "symbol",
+      "source": "vn_admin",
+      "source-layer": "vn_wards_point",
+      "filter": [
+        "==",
+        [
+          "slice",
+          [
+            "get",
+            "ward_name"
+          ],
+          0,
+          8
+        ],
+        "Đặc khu "
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "ward_name"
+        ],
+        "text-font": [
+          "Open Sans Bold"
+        ],
+        "text-size": {
+          "stops": [
+            [
+              4,
+              11
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        "text-max-width": 10,
+        "text-anchor": "center",
+        "text-justify": "center",
+        "text-letter-spacing": 0.05,
+        "text-padding": 4,
+        "symbol-placement": "point",
+        "symbol-sort-key": 20
+      },
+      "paint": {
+        "text-color": "#111111",
+        "text-halo-color": "rgba(255,255,255,0.95)",
+        "text-halo-width": 1.8
+      }
+    },
+    {
+      "id": "vn_provinces_name",
+      "type": "symbol",
+      "source": "vn_admin",
+      "source-layer": "vn_provinces_point",   
+      "layout": {
+        "text-field": [
+          "get",
+          "prov_name"
+        ],
+        "text-font": [
+          "Open Sans Bold"
+        ],
+        "text-transform": "uppercase",
+        "text-size": {
+          "stops": [
+            [
+              4,
+              11
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        "text-max-width": 10,
+        "text-anchor": "center",
+        "text-justify": "center",
+        "text-letter-spacing": 0.05,
+        "text-padding": 4,
+        "symbol-placement": "point",
+        "symbol-sort-key": 10
+      },
+      "paint": {
+        "text-color": "#111111",
+        "text-halo-color": "rgba(255,255,255,0.95)",
+        "text-halo-width": 1.8
+      }
+    }
+  ],
+  "id": "vn_admin"
+}

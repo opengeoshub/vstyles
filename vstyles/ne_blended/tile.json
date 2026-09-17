@@ -1,0 +1,18 @@
+{
+  "tilejson": "2.2.0",
+  "scheme": "xyz",
+  "tiles": [
+    "https://tiles.gishub.vn/ne_blended/{z}/{x}/{y}.webp"
+  ],
+  "attribution": "Open Geospatial Hub / Natural Earth",
+  "center": [
+    108.0,
+    12.0,
+    4
+  ],
+  "description": "Natural Earth Blended Relief",
+  "format": "webp",
+  "maxzoom": 8,
+  "minzoom": 0,
+  "name": "ne_blended"
+}

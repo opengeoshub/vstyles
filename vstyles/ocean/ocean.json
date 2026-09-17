@@ -1,0 +1,46 @@
+{
+  "version": 8,
+  "name": "ocean",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x",
+    "openmaptiles:mapbox:owner": "openmaptiles",
+    "openmaptiles:mapbox:source:url": "mapbox://openmaptiles.4qljc88t"
+  },
+  "sources": {
+    "ocean": {
+      "type": "vector",
+      "tiles": [
+        "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
+      ],
+      "minzoom": 0,
+      "maxzoom": 6
+    }
+  },
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/topography/sprite",
+  "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "hsl(47, 26%, 88%)"
+      }
+    },
+    {
+      "id": "ocean",
+      "type": "fill",
+      "source": "ocean",
+      "source-layer": "ocean",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "hsl(205, 56%, 73%)"
+      }
+    }
+  ],
+  "id": "ocean"
+}

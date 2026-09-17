@@ -17,15 +17,16 @@
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
-      "maxzoom": 14
+      "maxzoom": 12
     }
   },
-  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/ptm/black/sprite",
-  "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",  "layers": [
+  "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/ptm/dark/sprite",
+  "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
+  "layers": [
     {
       "id": "background",
       "type": "background",
-      "paint": {"background-color": "#2b2b2b"}
+      "paint": {"background-color": "#34373d"}
     },
     {
       "id": "earth",
@@ -33,7 +34,7 @@
       "source": "protomaps",
       "source-layer": "earth",
       "filter": ["==", ["geometry-type"], "Polygon"],
-      "paint": {"fill-color": "#141414"}
+      "paint": {"fill-color": "#1f1f1f"}
     },
     {
       "id": "landuse_park",
@@ -57,9 +58,9 @@
           ["linear"],
           ["zoom"],
           0,
-          "#181818",
+          "#232325",
           12,
-          "#181818"
+          "#232325"
         ]
       }
     },
@@ -69,7 +70,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "allotments", "village_green", "playground"],
-      "paint": {"fill-color": "#181818", "fill-opacity": 0.7}
+      "paint": {"fill-color": "#232325", "fill-opacity": 0.7}
     },
     {
       "id": "landuse_hospital",
@@ -77,7 +78,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "hospital"],
-      "paint": {"fill-color": "#1d1d1d"}
+      "paint": {"fill-color": "#252424"}
     },
     {
       "id": "landuse_industrial",
@@ -85,7 +86,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "industrial"],
-      "paint": {"fill-color": "#101010"}
+      "paint": {"fill-color": "#222222"}
     },
     {
       "id": "landuse_school",
@@ -93,7 +94,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "school", "university", "college"],
-      "paint": {"fill-color": "#111111"}
+      "paint": {"fill-color": "#262323"}
     },
     {
       "id": "landuse_beach",
@@ -101,7 +102,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "beach"],
-      "paint": {"fill-color": "#1f1f1f"}
+      "paint": {"fill-color": "#28282a"}
     },
     {
       "id": "landuse_zoo",
@@ -109,7 +110,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "zoo"],
-      "paint": {"fill-color": "#191919"}
+      "paint": {"fill-color": "#222323"}
     },
     {
       "id": "landuse_military",
@@ -117,7 +118,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "military", "naval_base", "airfield"],
-      "paint": {"fill-color": "#191919"}
+      "paint": {"fill-color": "#222323"}
     },
     {
       "id": "landuse_wood",
@@ -131,9 +132,9 @@
           ["linear"],
           ["zoom"],
           0,
-          "#1a1a1a",
+          "#202121",
           12,
-          "#1a1a1a"
+          "#202121"
         ]
       }
     },
@@ -149,9 +150,9 @@
           ["linear"],
           ["zoom"],
           0,
-          "#1c1c1c",
+          "#222323",
           12,
-          "#1c1c1c"
+          "#222323"
         ]
       }
     },
@@ -161,7 +162,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "glacier"],
-      "paint": {"fill-color": "#191919"}
+      "paint": {"fill-color": "#1c1c1c"}
     },
     {
       "id": "landuse_sand",
@@ -169,7 +170,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "sand"],
-      "paint": {"fill-color": "#161616"}
+      "paint": {"fill-color": "#212123"}
     },
     {
       "id": "landuse_aerodrome",
@@ -177,7 +178,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["in", "kind", "aerodrome"],
-      "paint": {"fill-color": "#191919"}
+      "paint": {"fill-color": "#1e1e1e"}
     },
     {
       "id": "roads_runway",
@@ -186,7 +187,7 @@
       "source-layer": "roads",
       "filter": ["==", "kind_detail", "runway"],
       "paint": {
-        "line-color": "#323232",
+        "line-color": "#333333",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -208,7 +209,7 @@
       "minzoom": 13,
       "filter": ["==", "kind_detail", "taxiway"],
       "paint": {
-        "line-color": "#323232",
+        "line-color": "#333333",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -228,7 +229,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["any", ["in", "kind", "runway", "taxiway"]],
-      "paint": {"fill-color": "#323232"}
+      "paint": {"fill-color": "#333333"}
     },
     {
       "id": "water",
@@ -236,7 +237,7 @@
       "source": "protomaps",
       "source-layer": "water",
       "filter": ["==", ["geometry-type"], "Polygon"],
-      "paint": {"fill-color": "#333333"}
+      "paint": {"fill-color": "#34373d"}
     },
     {
       "id": "water_stream",
@@ -245,7 +246,7 @@
       "source-layer": "water",
       "minzoom": 14,
       "filter": ["in", "kind", "stream"],
-      "paint": {"line-color": "#333333", "line-width": 0.5}
+      "paint": {"line-color": "#34373d", "line-width": 0.5}
     },
     {
       "id": "water_river",
@@ -255,7 +256,7 @@
       "minzoom": 9,
       "filter": ["in", "kind", "river"],
       "paint": {
-        "line-color": "#333333",
+        "line-color": "#34373d",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -275,7 +276,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "pedestrian"],
-      "paint": {"fill-color": "#191919"}
+      "paint": {"fill-color": "#1e1e1e"}
     },
     {
       "id": "landuse_pier",
@@ -283,7 +284,7 @@
       "source": "protomaps",
       "source-layer": "landuse",
       "filter": ["==", "kind", "pier"],
-      "paint": {"fill-color": "#0a0a0a"}
+      "paint": {"fill-color": "#333333"}
     },
     {
       "id": "roads_tunnels_other_casing",
@@ -292,7 +293,7 @@
       "source-layer": "roads",
       "filter": ["all", ["has", "is_tunnel"], ["in", "kind", "other", "path"]],
       "paint": {
-        "line-color": "#101010",
+        "line-color": "#141414",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -311,7 +312,7 @@
       "source-layer": "roads",
       "filter": ["all", ["has", "is_tunnel"], ["==", "kind", "minor_road"]],
       "paint": {
-        "line-color": "#101010",
+        "line-color": "#141414",
         "line-dasharray": [3, 2],
         "line-gap-width": [
           "interpolate",
@@ -344,7 +345,7 @@
       "source-layer": "roads",
       "filter": ["all", ["has", "is_tunnel"], ["has", "is_link"]],
       "paint": {
-        "line-color": "#101010",
+        "line-color": "#141414",
         "line-dasharray": [3, 2],
         "line-gap-width": [
           "interpolate",
@@ -380,7 +381,7 @@
         ["==", "kind", "major_road"]
       ],
       "paint": {
-        "line-color": "#101010",
+        "line-color": "#141414",
         "line-dasharray": [3, 2],
         "line-gap-width": [
           "interpolate",
@@ -417,7 +418,7 @@
         ["!has", "is_link"]
       ],
       "paint": {
-        "line-color": "#101010",
+        "line-color": "#141414",
         "line-dasharray": [6, 0.5],
         "line-gap-width": [
           "interpolate",
@@ -565,7 +566,7 @@
       "type": "fill",
       "source": "protomaps",
       "source-layer": "buildings",
-      "paint": {"fill-color": "#0a0a0a", "fill-opacity": 0.5}
+      "paint": {"fill-color": "#111111", "fill-opacity": 0.5}
     },
     {
       "id": "roads_pier",
@@ -574,7 +575,7 @@
       "source-layer": "roads",
       "filter": ["==", "kind_detail", "pier"],
       "paint": {
-        "line-color": "#0a0a0a",
+        "line-color": "#333333",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -602,7 +603,7 @@
         ["==", "kind_detail", "service"]
       ],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -636,7 +637,7 @@
         ["!=", "kind_detail", "service"]
       ],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -669,7 +670,7 @@
       "minzoom": 13,
       "filter": ["has", "is_link"],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -705,7 +706,7 @@
         ["==", "kind", "major_road"]
       ],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -744,7 +745,7 @@
         ["!has", "is_link"]
       ],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -782,7 +783,7 @@
         ["!=", "kind_detail", "pier"]
       ],
       "paint": {
-        "line-color": "#1f1f1f",
+        "line-color": "#333333",
         "line-dasharray": [3, 1],
         "line-width": [
           "interpolate",
@@ -802,7 +803,7 @@
       "source-layer": "roads",
       "filter": ["has", "is_link"],
       "paint": {
-        "line-color": "#1f1f1f",
+        "line-color": "#3d3d3d",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -829,7 +830,7 @@
         ["==", "kind_detail", "service"]
       ],
       "paint": {
-        "line-color": "#1f1f1f",
+        "line-color": "#333333",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -859,9 +860,9 @@
           ["exponential", 1.6],
           ["zoom"],
           11,
-          "#292929",
+          "#3d3d3d",
           16,
-          "#1f1f1f"
+          "#333333"
         ],
         "line-width": [
           "interpolate",
@@ -891,7 +892,7 @@
         ["==", "kind", "major_road"]
       ],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -926,7 +927,7 @@
         ["==", "kind", "major_road"]
       ],
       "paint": {
-        "line-color": "#292929",
+        "line-color": "#3d3d3d",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -956,7 +957,7 @@
         ["!has", "is_link"]
       ],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -992,7 +993,7 @@
         ["!has", "is_link"]
       ],
       "paint": {
-        "line-color": "#292929",
+        "line-color": "#474747",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1019,7 +1020,7 @@
       "paint": {
         "line-dasharray": [0.3, 0.75],
         "line-opacity": 0.5,
-        "line-color": "#292929",
+        "line-color": "#000000",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1040,7 +1041,7 @@
       "source-layer": "boundaries",
       "filter": ["<=", "kind_detail", 2],
       "paint": {
-        "line-color": "#707070",
+        "line-color": "#5b6374",
         "line-width": 1,
         "line-dasharray": [3, 2]
       }
@@ -1052,7 +1053,7 @@
       "source-layer": "boundaries",
       "filter": [">", "kind_detail", 2],
       "paint": {
-        "line-color": "#707070",
+        "line-color": "#5b6374",
         "line-width": 0.5,
         "line-dasharray": [3, 2]
       }
@@ -1065,7 +1066,7 @@
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["in", "kind", "other", "path"]],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#2b2b2b",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1085,7 +1086,7 @@
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["has", "is_link"]],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1116,7 +1117,7 @@
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "minor_road"]],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1149,7 +1150,7 @@
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1180,7 +1181,7 @@
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["in", "kind", "other", "path"]],
       "paint": {
-        "line-color": "#1f1f1f",
+        "line-color": "#333333",
         "line-dasharray": [2, 1],
         "line-width": [
           "interpolate",
@@ -1201,7 +1202,7 @@
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "minor_road"]],
       "paint": {
-        "line-color": "#1f1f1f",
+        "line-color": "#333333",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1225,7 +1226,7 @@
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["has", "is_link"]],
       "paint": {
-        "line-color": "#1f1f1f",
+        "line-color": "#333333",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1247,7 +1248,7 @@
       "minzoom": 12,
       "filter": ["all", ["has", "is_bridge"], ["==", "kind", "major_road"]],
       "paint": {
-        "line-color": "#292929",
+        "line-color": "#3d3d3d",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1276,7 +1277,7 @@
         ["!has", "is_link"]
       ],
       "paint": {
-        "line-color": "#141414",
+        "line-color": "#1f1f1f",
         "line-gap-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1313,7 +1314,7 @@
         ["!has", "is_link"]
       ],
       "paint": {
-        "line-color": "#292929",
+        "line-color": "#474747",
         "line-width": [
           "interpolate",
           ["exponential", 1.6],
@@ -1628,7 +1629,7 @@
         "text-size": 12,
         "text-letter-spacing": 0.2
       },
-      "paint": {"text-color": "#707070"}
+      "paint": {"text-color": "#717784"}
     },
     {
       "id": "roads_labels_minor",
@@ -1929,7 +1930,7 @@
       },
       "paint": {
         "text-color": "#525252",
-        "text-halo-color": "#141414",
+        "text-halo-color": "#1f1f1f",
         "text-halo-width": 1,
         "text-halo-blur": 1
       }
@@ -2241,7 +2242,7 @@
         "text-max-width": 9,
         "text-transform": "uppercase"
       },
-      "paint": {"text-color": "#707070"}
+      "paint": {"text-color": "#717784"}
     },
     {
       "id": "water_label_lakes",
@@ -2539,7 +2540,7 @@
         "text-letter-spacing": 0.1,
         "text-max-width": 9
       },
-      "paint": {"text-color": "#707070"}
+      "paint": {"text-color": "#717784"}
     },
     {
       "id": "roads_labels_major",
@@ -2839,10 +2840,394 @@
         "text-size": 12
       },
       "paint": {
-        "text-color": "#5c5c5c",
-        "text-halo-color": "#141414",
+        "text-color": "#666666",
+        "text-halo-color": "#1f1f1f",
         "text-halo-width": 1,
         "text-halo-blur": 1
+      }
+    },
+    {
+      "id": "pois",
+      "type": "symbol",
+      "source": "protomaps",
+      "source-layer": "pois",
+      "filter": [
+        "all",
+        [
+          "in",
+          ["get", "kind"],
+          [
+            "literal",
+            [
+              "beach",
+              "forest",
+              "marina",
+              "park",
+              "peak",
+              "zoo",
+              "garden",
+              "bench",
+              "aerodrome",
+              "station",
+              "bus_stop",
+              "ferry_terminal",
+              "stadium",
+              "university",
+              "library",
+              "school",
+              "animal",
+              "toilets",
+              "drinking_water"
+            ]
+          ]
+        ],
+        [">=", ["zoom"], ["+", ["get", "min_zoom"], 0]]
+      ],
+      "layout": {
+        "icon-image": [
+          "match",
+          ["get", "kind"],
+          "station",
+          "train_station",
+          ["get", "kind"]
+        ],
+        "text-font": ["Noto Sans Regular"],
+        "text-justify": "auto",
+        "text-field": [
+          "case",
+          [
+            "all",
+            ["any", ["has", "name"], ["has", "pgf:name"]],
+            ["!", ["any", ["has", "name2"], ["has", "pgf:name2"]]],
+            ["!", ["any", ["has", "name3"], ["has", "pgf:name3"]]]
+          ],
+          [
+            "case",
+            ["has", "script"],
+            [
+              "case",
+              [
+                "any",
+                ["is-supported-script", ["get", "name"]],
+                ["has", "pgf:name"]
+              ],
+              [
+                "format",
+                ["coalesce", ["get", "name:en"], ["get", "name:en"]],
+                {},
+                "\n",
+                {},
+                [
+                  "case",
+                  [
+                    "all",
+                    ["!", ["has", "name:en"]],
+                    ["has", "name:en"],
+                    ["!", ["has", "script"]]
+                  ],
+                  "",
+                  ["coalesce", ["get", "pgf:name"], ["get", "name"]]
+                ],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ],
+              ["get", "name:en"]
+            ],
+            [
+              "format",
+              [
+                "coalesce",
+                ["get", "name:en"],
+                ["get", "pgf:name"],
+                ["get", "name"]
+              ],
+              {}
+            ]
+          ],
+          [
+            "all",
+            ["any", ["has", "name"], ["has", "pgf:name"]],
+            ["any", ["has", "name2"], ["has", "pgf:name2"]],
+            ["!", ["any", ["has", "name3"], ["has", "pgf:name3"]]]
+          ],
+          [
+            "case",
+            ["all", ["has", "script"], ["has", "script2"]],
+            [
+              "format",
+              ["get", "name:en"],
+              {},
+              "\n",
+              {},
+              ["coalesce", ["get", "pgf:name"], ["get", "name"]],
+              {
+                "text-font": [
+                  "case",
+                  ["==", ["get", "script"], "Devanagari"],
+                  ["literal", ["Noto Sans Devanagari Regular v1"]],
+                  ["literal", ["Noto Sans Regular"]]
+                ]
+              },
+              "\n",
+              {},
+              ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
+              {
+                "text-font": [
+                  "case",
+                  ["==", ["get", "script2"], "Devanagari"],
+                  ["literal", ["Noto Sans Devanagari Regular v1"]],
+                  ["literal", ["Noto Sans Regular"]]
+                ]
+              }
+            ],
+            [
+              "case",
+              ["has", "script2"],
+              [
+                "format",
+                [
+                  "coalesce",
+                  ["get", "name:en"],
+                  ["get", "pgf:name"],
+                  ["get", "name"]
+                ],
+                {},
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script2"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ],
+              [
+                "format",
+                [
+                  "coalesce",
+                  ["get", "name:en"],
+                  ["get", "pgf:name2"],
+                  ["get", "name2"]
+                ],
+                {},
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ]
+            ]
+          ],
+          [
+            "case",
+            ["all", ["has", "script"], ["has", "script2"], ["has", "script3"]],
+            [
+              "format",
+              ["get", "name:en"],
+              {},
+              "\n",
+              {},
+              ["coalesce", ["get", "pgf:name"], ["get", "name"]],
+              {
+                "text-font": [
+                  "case",
+                  ["==", ["get", "script"], "Devanagari"],
+                  ["literal", ["Noto Sans Devanagari Regular v1"]],
+                  ["literal", ["Noto Sans Regular"]]
+                ]
+              },
+              "\n",
+              {},
+              ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
+              {
+                "text-font": [
+                  "case",
+                  ["==", ["get", "script2"], "Devanagari"],
+                  ["literal", ["Noto Sans Devanagari Regular v1"]],
+                  ["literal", ["Noto Sans Regular"]]
+                ]
+              },
+              "\n",
+              {},
+              ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
+              {
+                "text-font": [
+                  "case",
+                  ["==", ["get", "script3"], "Devanagari"],
+                  ["literal", ["Noto Sans Devanagari Regular v1"]],
+                  ["literal", ["Noto Sans Regular"]]
+                ]
+              }
+            ],
+            [
+              "case",
+              ["!", ["has", "script"]],
+              [
+                "format",
+                [
+                  "coalesce",
+                  ["get", "name:en"],
+                  ["get", "pgf:name"],
+                  ["get", "name"]
+                ],
+                {},
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script2"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                },
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script3"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ],
+              ["!", ["has", "script2"]],
+              [
+                "format",
+                [
+                  "coalesce",
+                  ["get", "name:en"],
+                  ["get", "pgf:name2"],
+                  ["get", "name2"]
+                ],
+                {},
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                },
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name3"], ["get", "name3"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script3"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ],
+              [
+                "format",
+                [
+                  "coalesce",
+                  ["get", "name:en"],
+                  ["get", "pgf:name3"],
+                  ["get", "name3"]
+                ],
+                {},
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name"], ["get", "name"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                },
+                "\n",
+                {},
+                ["coalesce", ["get", "pgf:name2"], ["get", "name2"]],
+                {
+                  "text-font": [
+                    "case",
+                    ["==", ["get", "script2"], "Devanagari"],
+                    ["literal", ["Noto Sans Devanagari Regular v1"]],
+                    ["literal", ["Noto Sans Regular"]]
+                  ]
+                }
+              ]
+            ]
+          ]
+        ],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 17, 10, 19, 16],
+        "text-max-width": 8,
+        "text-offset": [1.1, 0],
+        "text-variable-anchor": ["left", "right"]
+      },
+      "paint": {
+        "text-color": [
+          "case",
+          [
+            "in",
+            ["get", "kind"],
+            [
+              "literal",
+              [
+                "beach",
+                "forest",
+                "marina",
+                "park",
+                "peak",
+                "zoo",
+                "garden",
+                "bench"
+              ]
+            ]
+          ],
+          "#30C573",
+          [
+            "in",
+            ["get", "kind"],
+            ["literal", ["aerodrome", "station", "bus_stop", "ferry_terminal"]]
+          ],
+          "#2B5CEA",
+          [
+            "in",
+            ["get", "kind"],
+            [
+              "literal",
+              [
+                "stadium",
+                "university",
+                "library",
+                "school",
+                "animal",
+                "toilets",
+                "drinking_water"
+              ]
+            ]
+          ],
+          "#93939F",
+          "#1f1f1f"
+        ]
       }
     },
     {
@@ -3167,8 +3552,8 @@
         "text-transform": "uppercase"
       },
       "paint": {
-        "text-color": "#5c5c5c",
-        "text-halo-color": "#141414",
+        "text-color": "#525252",
+        "text-halo-color": "#1f1f1f",
         "text-halo-width": 1,
         "text-halo-blur": 1
       }
@@ -3562,8 +3947,8 @@
         "text-radial-offset": 0.4
       },
       "paint": {
-        "text-color": "#999999",
-        "text-halo-color": "#141414",
+        "text-color": "#7a7a7a",
+        "text-halo-color": "#212121",
         "text-halo-width": 1,
         "text-halo-blur": 1
       }
@@ -3879,7 +4264,7 @@
       },
       "paint": {
         "text-color": "#3d3d3d",
-        "text-halo-color": "#141414",
+        "text-halo-color": "#1f1f1f",
         "text-halo-width": 1,
         "text-halo-blur": 1
       }
@@ -3947,7 +4332,7 @@
         ],
         "text-transform": "uppercase"
       },
-      "paint": {"text-color": "#707070"}
+      "paint": {"text-color": "#5c5c5c"}
     },
     {
       "id": "vn_islands",
@@ -4023,5 +4408,5 @@
       }
     }
   ],
-  "id": "8nlm9hz"
+  "id": "si3yqow"
 }

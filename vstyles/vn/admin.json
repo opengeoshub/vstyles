@@ -24,8 +24,8 @@
       "tiles": [
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
       ],
-      "minzoom": 0,
-      "maxzoom": 14
+      "minzoom": 4,
+      "maxzoom": 12
     },
     "vn_admin": {
       "type": "vector",
@@ -33,13 +33,15 @@
         "https://tiles.gishub.vn/vn_admin/{z}/{x}/{y}.pbf"
       ],
       "minzoom": 0,
-      "maxzoom": 14
+      "maxzoom": 12
     },
     "ocean": {
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
-      ]
+      ],
+      "minzoom": 0,
+      "maxzoom": 6
     },
     "ne_shaded": {
       "type": "raster",
@@ -2002,54 +2004,6 @@
       }
     },
     {
-      "id": "vn_islands_name",
-      "type": "symbol",
-      "source": "vn_islands",
-      "source-layer": "vn_islands_name",
-      "minzoom": 1,
-      "layout": {
-        "text-field": "{name}",
-        "text-max-width": 10,
-        "text-writing-mode": [
-          "horizontal"
-        ],
-        "text-size": {
-          "base": 1,
-          "stops": [
-            [
-              4,
-              12
-            ],
-            [
-              19,
-              20
-            ]
-          ]
-        },
-        "text-font": [
-          "Open Sans Regular",
-          "Arial Unicode MS Regular"
-        ],
-        "icon-allow-overlap": true,
-        "icon-text-fit": "none",
-        "symbol-avoid-edges": false,
-        "icon-size": 1,
-        "text-anchor": "top",
-        "text-justify": "center",
-        "text-offset": [
-          0,
-          0.6
-        ],
-        "icon-image": "vietnam-5"
-      },
-      "paint": {
-        "text-color": "#000000",
-        "text-halo-color": "#fff",
-        "text-halo-width": 2,
-        "icon-translate-anchor": "map"
-      }
-    },
-    {
       "id": "vn_marine",
       "type": "symbol",
       "source": "vn_islands",
@@ -2132,6 +2086,19 @@
       "source-layer": "vn_wards_point",
       "minzoom": 9,
       "maxzoom": 18,
+      "filter": [
+        "!=",
+        [
+          "slice",
+          [
+            "get",
+            "ward_name"
+          ],
+          0,
+          8
+        ],
+        "Đặc khu "
+      ],
       "layout": {
         "text-field": [
           "get",
@@ -2166,6 +2133,112 @@
         "text-color": "#222222",
         "text-halo-color": "rgba(255,255,255,0.9)",
         "text-halo-width": 1.2
+      }
+    },
+    {
+      "id": "vn_wards_name_dac_khu",
+      "type": "symbol",
+      "source": "vn_admin",
+      "source-layer": "vn_wards_point",
+      "minzoom": 5,
+      "maxzoom": 14,
+      "filter": [
+        "==",
+        [
+          "slice",
+          [
+            "get",
+            "ward_name"
+          ],
+          0,
+          8
+        ],
+        "Đặc khu "
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "ward_name"
+        ],
+        "text-font": [
+          "Open Sans Bold"
+        ],
+        "text-size": {
+          "stops": [
+            [
+              4,
+              11
+            ],
+            [
+              8,
+              14
+            ],
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        "text-max-width": 10,
+        "text-anchor": "center",
+        "text-justify": "center",
+        "text-letter-spacing": 0.05,
+        "text-padding": 4,
+        "symbol-placement": "point",
+        "symbol-sort-key": 20
+      },
+      "paint": {
+        "text-color": "#111111",
+        "text-halo-color": "rgba(255,255,255,0.95)",
+        "text-halo-width": 1.8
+      }
+    },
+    {
+      "id": "vn_islands_name",
+      "type": "symbol",
+      "source": "vn_islands",
+      "source-layer": "vn_islands_name",
+      "layout": {
+        "text-field": "{name}",
+        "text-max-width": 10,
+        "text-writing-mode": [
+          "horizontal"
+        ],
+        "text-size": {
+          "base": 1,
+          "stops": [
+            [
+              4,
+              12
+            ],
+            [
+              19,
+              20
+            ]
+          ]
+        },
+        "text-font": [
+          "Open Sans Regular",
+          "Arial Unicode MS Regular"
+        ],
+        "icon-allow-overlap": true,
+        "icon-text-fit": "none",
+        "symbol-avoid-edges": false,
+        "icon-size": 1,
+        "text-anchor": "top",
+        "text-justify": "center",
+        "text-offset": [
+          0,
+          0.6
+        ],
+        "icon-image": "vietnam-5",
+        "symbol-sort-key": 1
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#fff",
+        "text-halo-width": 2,
+        "icon-translate-anchor": "map"
       }
     },
     {

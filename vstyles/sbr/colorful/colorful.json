@@ -14,7 +14,7 @@
 				"https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
 			],
 			"minzoom": 0,
-			"maxzoom": 14
+			"maxzoom": 12
 		},
 		"versatiles-shortbread": {
 			"tilejson": "3.0.0",

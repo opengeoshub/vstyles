@@ -38,7 +38,8 @@
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
-      ]
+      ],
+      "maxzoom": 12
     },
     "hillshading": {
       "type": "raster",

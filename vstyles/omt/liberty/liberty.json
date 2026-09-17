@@ -27,7 +27,8 @@
       "type": "vector",
       "tiles": [
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
-      ]
+      ],
+      "maxzoom": 12
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/liberty/sprite",

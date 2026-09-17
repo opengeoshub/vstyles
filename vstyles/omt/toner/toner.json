@@ -29,7 +29,8 @@
       "type": "vector",
       "tiles": [
         "https://api.maptiler.com/tiles/v3/tiles.json?key={key}"
-      ]
+      ],
+      "maxzoom": 12
     },
     "ne_grey": {
       "type": "raster",
