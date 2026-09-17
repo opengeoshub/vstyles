@@ -278,6 +278,20 @@
       }
     },
     {
+      "id": "hills",
+      "type": "hillshade",
+      "source": "hillshadeSource",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "hillshade-shadow-color": "#473B24",
+        "hillshade-highlight-color": "#FFFFFF",
+        "hillshade-illumination-direction": 315,
+        "hillshade-exaggeration": 0.5
+      }
+    },
+    {
       "id": "waterway_tunnel",
       "type": "line",
       "source": "openmaptiles",
@@ -1679,5 +1693,10 @@
       }
     }
   ],
+  "terrain": {
+    "source": "terrainSource",
+    "exaggeration": 1
+  },
+  "sky": {},
   "id": "3d"
 }
