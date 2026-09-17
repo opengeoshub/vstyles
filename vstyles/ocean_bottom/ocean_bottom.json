@@ -1,0 +1,49 @@
+{
+  "version": 8,
+  "name": "ocean_bottom",
+  "metadata": {
+    "mapbox:autocomposite": false,
+    "mapbox:type": "template",
+    "maputnik:renderer": "mbgljs",
+    "openmaptiles:version": "3.x"
+  },
+  "center": [
+    108.0,
+    12.0
+  ],
+  "zoom": 4,
+  "bearing": 0,
+  "pitch": 0,
+  "sources": {
+    "ocean_bottom": {
+      "type": "raster",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/ocean.pmtiles",
+      "tileSize": 512,
+      "minzoom": 0,
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "hsl(205, 40%, 88%)"
+      }
+    },
+    {
+      "id": "ocean_bottom",
+      "type": "raster",
+      "source": "ocean_bottom",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": 1,
+        "raster-resampling": "linear"
+      }
+    }
+  ],
+  "id": "ocean_bottom"
+}

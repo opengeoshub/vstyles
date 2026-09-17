@@ -1,0 +1,20 @@
+{
+  "tilejson": "2.2.0",
+  "scheme": "xyz",
+  "tiles": [
+    "pmtiles://https://tiles.gishub.vn/pmtiles/ocean.pmtiles"
+  ],
+  "attribution": "Open Geospatial Hub",
+  "center": [
+    108.0,
+    12.0,
+    4
+  ],
+  "description": "Ocean bottom (bathymetry) from ocean.pmtiles",
+  "format": "png",
+  "tileSize": 512,
+  "maxzoom": 6,
+  "minzoom": 0,
+  "name": "ocean_bottom",
+  "type": "overlay"
+}
