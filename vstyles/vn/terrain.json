@@ -66,6 +66,13 @@
       "encoding": "terrarium",
       "tileSize": 512,
       "attribution": "© Mapterhorn"
+    },
+    "contourSource": {
+      "type": "vector",
+      "tiles": [
+        "dem-contour://{z}/{x}/{y}?buffer=1&contourLayer=contours&elevationKey=ele&levelKey=level&overzoom=2&thresholds=12*100*500~14*20*100"
+      ],
+      "maxzoom": 17
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
@@ -297,6 +304,59 @@
         "hillshade-highlight-color": "#FFFFFF",
         "hillshade-illumination-direction": 315,
         "hillshade-exaggeration": 0.5
+      }
+    },
+    {
+      "id": "contours",
+      "type": "line",
+      "source": "contourSource",
+      "source-layer": "contours",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "rgb(215, 151, 60)",
+        "line-width": [
+          "match",
+          [
+            "get",
+            "level"
+          ],
+          1,
+          1,
+          0.5
+        ]
+      }
+    },
+    {
+      "id": "contour-text",
+      "type": "symbol",
+      "source": "contourSource",
+      "source-layer": "contours",
+      "layout": {
+        "visibility": "visible",
+        "symbol-placement": "line",
+        "text-size": 14,
+        "text-field": [
+          "concat",
+          [
+            "number-format",
+            [
+              "get",
+              "ele"
+            ],
+            {}
+          ],
+          "m"
+        ],
+        "text-font": [
+          "Noto Sans Regular"
+        ]
+      },
+      "paint": {
+        "text-color": "rgb(172, 120, 48)",
+        "text-halo-color": "white",
+        "text-halo-width": 2
       }
     },
     {
