@@ -57,7 +57,6 @@ omt_toner = 'https://raw.githubusercontent.com/opengeoshub/vstyles/refs/heads/ma
 #####################################################################
 ne_shaded_relief = 'https://klokantech.github.io/naturalearthtiles/tiles/natural_earth_2_shaded_relief.raster/{z}/{x}/{y}.png'
 ne_blended_relief = 'https://naturalearthtiles.roblabs.com/tiles/natural_earth_cross_blended_hypso_shaded_relief.raster/{z}/{x}/{y}.png'
-ne_grey_relief =  'https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp'
 dem = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'
 #####################################################################
 

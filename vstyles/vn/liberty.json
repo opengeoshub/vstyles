@@ -7,14 +7,6 @@
     "openmaptiles:version": "3.x"
   },
   "sources": {
-    "ne_blended": {
-      "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_blended/{z}/{x}/{y}.webp"
-      ],
-      "minzoom": 0,
-      "maxzoom": 8
-    },
     "openmaptiles": {
       "type": "vector",
       "tiles": [
@@ -36,6 +28,13 @@
       "tiles": [
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
       ]
+    },
+    "earth_blended": {
+      "type": "raster",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/liberty/sprite",
@@ -46,30 +45,6 @@
       "type": "background",
       "paint": {
         "background-color": "rgb(239,239,239)"
-      }
-    },
-    {
-      "id": "ne_blended",
-      "type": "raster",
-      "source": "ne_blended",
-      "maxzoom": 8,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "raster-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          0,
-          0.6,
-          8,
-          0
-        ]
       }
     },
     {
@@ -4433,7 +4408,31 @@
           ]
         }
       }
+    },
+    {
+      "id": "earth_blended",
+      "type": "raster",
+      "source": "earth_blended",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          1,
+          8,
+          0
+        ],
+        "raster-resampling": "linear"
+      }
     }
   ],
-  "id": "osm-liberty"
+  "id": "liberty"
 }

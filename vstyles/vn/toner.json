@@ -39,13 +39,12 @@
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
       ]
     },
-    "ne_grey": {
+    "earth_shaded": {
       "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
-      ],
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
       "minzoom": 0,
-      "maxzoom": 8
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "sprite": "https://openmaptiles.github.io/maptiler-toner-gl-style/sprite",
@@ -59,10 +58,10 @@
       }
     },
     {
-      "id": "ne_grey",
+      "id": "earth_shaded",
       "type": "raster",
-      "source": "ne_grey",
-      "maxzoom": 8,
+      "source": "earth_shaded",
+      "maxzoom": 6,
       "layout": {
         "visibility": "visible"
       },
@@ -76,10 +75,11 @@
             "zoom"
           ],
           0,
-          0.6,
+          0.5,
           8,
           0
-        ]
+        ],
+        "raster-resampling": "linear"
       }
     },
     {
@@ -1831,5 +1831,5 @@
       }
     }
   ],
-  "id": "c4268e48-fac9-4478-8120-201224fbd4d8"
+  "id": "toner"
 }

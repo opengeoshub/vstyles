@@ -10,15 +10,6 @@
       "type": "vector",
       "url": "https://tiles.nst.guide/openmaptiles/tile.json"
     },
-    "natural_earth_shaded_relief": {
-      "maxzoom": 8,
-      "tileSize": 256,
-      "tiles": [
-        "https://tiles.gishub.vn/ne_shaded/{z}/{x}/{y}.webp"
-      ],
-      "type": "raster",
-      "minzoom": 0
-    },
     "terrarium": {
       "type": "raster-dem",
       "tiles": [
@@ -54,27 +45,6 @@
       "type": "background",
       "paint": {
         "background-color": "rgb(239,239,239)"
-      }
-    },
-    {
-      "id": "natural_earth",
-      "type": "raster",
-      "source": "natural_earth_shaded_relief",
-      "maxzoom": 8,
-      "paint": {
-        "raster-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          0,
-          0.6,
-          8,
-          0
-        ]
       }
     },
     {

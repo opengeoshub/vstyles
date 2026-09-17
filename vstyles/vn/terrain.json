@@ -48,14 +48,6 @@
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
       ]
     },
-    "hillshading": {
-      "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_blended/{z}/{x}/{y}.webp"
-      ],
-      "minzoom": 0,
-      "maxzoom": 8
-    },
     "esri": {
       "type": "vector",
       "tiles": [
@@ -64,6 +56,13 @@
       "minzoom": 0,
       "maxzoom": 14,
       "scheme": "xyz"
+    },
+    "earth_blended": {
+      "type": "raster",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
@@ -77,30 +76,6 @@
       },
       "paint": {
         "background-color": "hsl(47, 26%, 88%)"
-      }
-    },
-    {
-      "id": "hillshading",
-      "type": "raster",
-      "source": "hillshading",
-      "maxzoom": 8,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "raster-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          0,
-          0.6,
-          8,
-          0
-        ]
       }
     },
     {
@@ -2588,7 +2563,31 @@
           ]
         }
       }
+    },
+    {
+      "id": "earth_blended",
+      "type": "raster",
+      "source": "earth_blended",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          1,
+          8,
+          0
+        ],
+        "raster-resampling": "linear"
+      }
     }
   ],
-  "id": "maptiler-terrain"
+  "id": "terrain"
 }

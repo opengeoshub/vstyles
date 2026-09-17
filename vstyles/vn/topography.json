@@ -47,14 +47,6 @@
   "bearing": 0,
   "pitch": 0,
   "sources": {
-    "ne_blended": {
-      "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_blended/{z}/{x}/{y}.webp"
-      ],
-      "minzoom": 0,
-      "maxzoom": 8
-    },
     "openmaptiles": {
       "type": "vector",
       "tiles": [
@@ -94,6 +86,13 @@
       "tiles": [
         "https://basemaps.arcgis.com/arcgis/rest/services/World_Hillshade_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
       ]
+    },
+    "earth_blended": {
+      "type": "raster",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_blended.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/topography/sprite",
@@ -104,30 +103,6 @@
       "type": "background",
       "paint": {
         "background-color": "#f8f4f0"
-      }
-    },
-    {
-      "id": "ne_blended",
-      "type": "raster",
-      "source": "ne_blended",
-      "maxzoom": 8,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "raster-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          0,
-          0.5,
-          8,
-          0
-        ]
       }
     },
     {
@@ -6953,6 +6928,30 @@
             ]
           ]
         }
+      }
+    },
+    {
+      "id": "earth_blended",
+      "type": "raster",
+      "source": "earth_blended",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          1,
+          8,
+          0
+        ],
+        "raster-resampling": "linear"
       }
     }
   ],

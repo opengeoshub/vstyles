@@ -32,15 +32,13 @@
       ],
       "maxzoom": 12
     },
-    "ne_grey": {
+    "earth_shaded": {
       "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
-      ],
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
+      "tileSize": 512,
       "minzoom": 0,
-      "maxzoom": 8,
-      "scheme": "xyz",
-      "tileSize": 512
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "sprite": "https://openmaptiles.github.io/maptiler-toner-gl-style/sprite",
@@ -54,10 +52,10 @@
       }
     },
     {
-      "id": "ne_grey",
+      "id": "earth_shaded",
       "type": "raster",
-      "source": "ne_grey",
-      "maxzoom": 8,
+      "source": "earth_shaded",
+      "maxzoom": 6,
       "layout": {
         "visibility": "visible"
       },
@@ -72,9 +70,10 @@
           ],
           0,
           0.6,
-          8,
+          6,
           0
-        ]
+        ],
+        "raster-resampling": "linear"
       }
     },
     {

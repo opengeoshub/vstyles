@@ -1,0 +1,20 @@
+{
+  "tilejson": "2.2.0",
+  "scheme": "xyz",
+  "tiles": [
+    "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles"
+  ],
+  "attribution": "Open Geospatial Hub",
+  "center": [
+    108.0,
+    12.0,
+    4
+  ],
+  "description": "Earth shaded relief over ocean bottom",
+  "format": "png",
+  "tileSize": 512,
+  "maxzoom": 6,
+  "minzoom": 0,
+  "name": "earth_shaded",
+  "type": "overlay"
+}

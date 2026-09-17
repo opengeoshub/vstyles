@@ -45,15 +45,12 @@
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
       ]
     },
-    "ne_grey": {
+    "earth_shaded": {
       "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
-      ],
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
       "minzoom": 0,
-      "maxzoom": 8,
-      "scheme": "xyz",
-      "tileSize": 512
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "sprite": "https://openmaptiles.github.io/dark-matter-gl-style/sprite",
@@ -67,32 +64,6 @@
       },
       "paint": {
         "background-color": "rgb(12,12,12)"
-      }
-    },
-    {
-      "id": "ne_grey",
-      "type": "raster",
-      "source": "ne_grey",
-      "maxzoom": 8,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "raster-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          0,
-          0.3,
-          8,
-          0
-        ],
-        "raster-brightness-min": 1,
-        "raster-brightness-max": 0
       }
     },
     {
@@ -2296,7 +2267,33 @@
           ]
         }
       }
+    },
+    {
+      "id": "earth_shaded",
+      "type": "raster",
+      "source": "earth_shaded",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "raster-opacity": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          0,
+          0.5,
+          8,
+          0
+        ],
+        "raster-brightness-min": 1,
+        "raster-brightness-max": 0,
+        "raster-resampling": "linear"
+      }
     }
   ],
-  "id": "dark-matter"
+  "id": "dark"
 }

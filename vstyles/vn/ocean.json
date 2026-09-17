@@ -2045,7 +2045,6 @@
       "id": "ocean_bottom",
       "type": "raster",
       "source": "ocean_bottom",
-      "maxzoom": 6,
       "layout": {
         "visibility": "visible"
       },
@@ -2067,6 +2066,5 @@
       }
     }
   ],
-  
   "id": "ocean"
 }

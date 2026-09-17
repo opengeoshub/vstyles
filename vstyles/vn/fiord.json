@@ -51,13 +51,12 @@
         "https://tiles.gishub.vn/ocean/{z}/{x}/{y}.pbf"
       ]
     },
-    "ne_grey": {
+    "earth_shaded": {
       "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
-      ],
-      "maxzoom": 8,
-      "minzoom": 0
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
+      "minzoom": 0,
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",
@@ -71,10 +70,9 @@
       }
     },
     {
-      "id": "ne_grey",
+      "id": "earth_shaded",
       "type": "raster",
-      "source": "ne_grey",
-      "maxzoom": 8,
+      "source": "earth_shaded",
       "layout": {
         "visibility": "visible"
       },
@@ -88,10 +86,11 @@
             "zoom"
           ],
           0,
-          0.1,
+          0.5,
           8,
           0
-        ]
+        ],
+        "raster-resampling": "linear"
       }
     },
     {
@@ -2413,5 +2412,5 @@
       }
     }
   ],
-  "id": "ciwlw4z7800092qmvzlut41tx"
+  "id": "fiord"
 }

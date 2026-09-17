@@ -12,14 +12,6 @@
   "bearing": 0,
   "pitch": 0,
   "sources": {
-    "ne": {
-      "type": "raster",
-      "tiles": [
-        "https://tiles.gishub.vn/ne_grey/{z}/{x}/{y}.webp"
-      ],
-      "minzoom": 0,
-      "maxzoom": 8
-    },
     "vn_pop": {
       "type": "vector",
       "tiles": [
@@ -61,6 +53,14 @@
       "tiles": [
         "https://basemaps.arcgis.com/arcgis/rest/services/World_Hillshade_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
       ]
+    },
+    "earth_shaded": {
+      "type": "raster",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
+      "tileSize": 512,
+      "minzoom": 0,
+      "maxzoom": 6,
+      "attribution": "Open Geospatial Hub"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/topography/sprite",
@@ -74,10 +74,10 @@
       }
     },
     {
-      "id": "ne",
+      "id": "earth_shaded",
       "type": "raster",
-      "source": "ne",
-      "maxzoom": 8,
+      "source": "earth_shaded",
+      "maxzoom": 6,
       "layout": {
         "visibility": "visible"
       },
@@ -92,7 +92,7 @@
           ],
           0,
           0.5,
-          8,
+          6,
           0
         ]
       }
