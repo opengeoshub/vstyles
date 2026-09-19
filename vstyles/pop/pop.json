@@ -33,7 +33,8 @@
       "type": "vector",
       "tiles": [
         "https://tiles.basemaps.cartocdn.com/vectortiles/carto.streets/v1/{z}/{x}/{y}.mvt"
-      ]
+      ],
+      "attribution": "© <a href=\"https://carto.com/attributions\">CARTO</a>, © <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"
     },
     "vn_islands": {
       "type": "vector",
