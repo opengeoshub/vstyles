@@ -47,7 +47,7 @@
       "type": "vector",
       "url": "pmtiles://https://tiles.gishub.vn/pmtiles/pop_h3.pmtiles",
       "minzoom": 0,
-      "maxzoom": 10
+      "maxzoom": 11
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",
@@ -2370,6 +2370,7 @@
       "source": "pop-h3-pmtiles",
       "source-layer": "population",
       "minzoom": 10,
+      "maxzoom": 11,
       "paint": {
         "fill-color": [
           "interpolate",
@@ -2403,6 +2404,73 @@
                   ]
                 ],
                 5.698970004336019
+              ]
+            ]
+          ],
+          0,
+          "#000004",
+          0.1111111111111111,
+          "#180f3d",
+          0.2222222222222222,
+          "#440f76",
+          0.3333333333333333,
+          "#721f81",
+          0.4444444444444444,
+          "#9e2f7f",
+          0.5555555555555556,
+          "#cd4071",
+          0.6666666666666666,
+          "#f1605d",
+          0.7777777777777778,
+          "#fd9668",
+          0.8888888888888888,
+          "#feca8d",
+          1,
+          "#fcfdbf"
+        ],
+        "fill-opacity": 0.9,
+        "fill-outline-color": "rgba(20,20,20,0.35)"
+      }
+    },
+    {
+      "id": "pop-h3-7",
+      "type": "fill",
+      "source": "pop-h3-pmtiles",
+      "source-layer": "h3_7",
+      "minzoom": 11,
+      "paint": {
+        "fill-color": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "min",
+            1,
+            [
+              "max",
+              0,
+              [
+                "/",
+                [
+                  "log10",
+                  [
+                    "max",
+                    [
+                      "coalesce",
+                      [
+                        "to-number",
+                        [
+                          "get",
+                          "population"
+                        ]
+                      ],
+                      0
+                    ],
+                    1
+                  ]
+                ],
+                5.079181246047625
               ]
             ]
           ],
