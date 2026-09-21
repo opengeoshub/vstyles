@@ -41,14 +41,6 @@
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
       ],
       "maxzoom": 12
-    },
-    "earth_shaded": {
-      "type": "raster",
-      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/earth_shaded.pmtiles",
-      "tileSize": 512,
-      "minzoom": 0,
-      "maxzoom": 6,
-      "attribution": "Open Geospatial Hub"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",
@@ -59,31 +51,6 @@
       "type": "background",
       "paint": {
         "background-color": "#45516E"
-      }
-    },
-    {
-      "id": "earth_shaded",
-      "type": "raster",
-      "source": "earth_shaded",
-      "maxzoom": 6,
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "raster-opacity": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          0,
-          0.1,
-          6,
-          0
-        ],
-        "raster-resampling": "linear"
       }
     },
     {
