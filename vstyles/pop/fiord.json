@@ -42,7 +42,7 @@
       ],
       "maxzoom": 12,
       "minzoom": 4
-    }
+    }  
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/omt/fiord/sprite",
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
@@ -2188,6 +2188,33 @@
       "paint": {
         "fill-color": "#45516e",
         "fill-opacity": 1
+      }
+    },
+    {
+      "id": "vn_islands_name",
+      "type": "symbol",
+      "source": "vn_islands",
+      "source-layer": "vn_islands_name",
+      "minzoom": 4,
+      "layout": {
+        "text-field": "{name}",
+        "text-max-width": 10,
+        "text-writing-mode": ["horizontal"],
+        "text-size": {"base": 1, "stops": [[4, 12], [19, 20]]},
+        "text-font": ["Open Sans Regular", "Arial Unicode MS Regular"],
+        "icon-allow-overlap": true,
+        "icon-text-fit": "none",
+        "symbol-avoid-edges": false,
+        "icon-size": 1,
+        "text-anchor": "top",
+        "text-justify": "center",
+        "text-offset": [0, 0.6]
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#fff",
+        "text-halo-width": 2,
+        "icon-translate-anchor": "map"
       }
     },
     {
