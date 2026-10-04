@@ -15,7 +15,7 @@
       "tiles": [
         "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
       ],
-      "minzoom": 4,
+      "minzoom": 0,
       "maxzoom": 12,
       "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     }
@@ -70,7 +70,7 @@
       "type": "symbol",
       "source": "vn_islands",
       "source-layer": "vn_islands_name",
-      "minzoom": 1,
+      "minzoom": 0,
       "layout": {
         "text-field": "{name}",
         "text-max-width": 10,

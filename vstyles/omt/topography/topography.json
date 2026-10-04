@@ -6818,8 +6818,8 @@
       "id": "vn_islands_name",
       "type": "symbol",
       "source": "vn_islands",
-      "source-layer": "vn_islands_name",
-      "minzoom": 1,
+      "source-layer": "vn_islands_name ",
+      "minzoom": 4,
       "layout": {
         "text-field": "{name}",
         "text-max-width": 10,
