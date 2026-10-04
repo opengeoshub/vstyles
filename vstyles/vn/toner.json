@@ -48,7 +48,16 @@
       "attribution": "<a href=\"https://gishub.vn\" target=\"_blank\">Open Geospatial Hub</a>"
     }
   },
-  "sprite": "https://openmaptiles.github.io/maptiler-toner-gl-style/sprite",
+  "sprite": [
+    {
+      "id": "default",
+      "url": "https://openmaptiles.github.io/maptiler-toner-gl-style/sprite"
+    },
+    {
+      "id": "vnsprite",
+      "url": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/vnsprite/sprite"
+    }
+  ],
   "glyphs": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
@@ -1711,7 +1720,7 @@
           "Open Sans Regular",
           "Arial Unicode MS Regular"
         ],
-        "icon-image": "vietnam-5",
+        "icon-image": "vnsprite:vietnam-5",
         "icon-allow-overlap": true,
         "icon-text-fit": "none",
         "symbol-avoid-edges": false,
