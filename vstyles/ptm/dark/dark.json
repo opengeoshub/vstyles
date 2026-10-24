@@ -2,22 +2,15 @@
   "version": 8,
   "metadata": {"maputnik:renderer": "mlgljs"},
   "sources": {
-    "protomaps": {
-      "type": "vector",
-      "tiles": [
-        "https://tiles.gishub.vn/vietnam.pmtiles"
-      ],
-      "minzoom": 0,
-      "maxzoom": 14,
-      "scheme": "xyz"
-    },
     "vn_islands": {
       "type": "vector",
-      "tiles": [
-        "https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"
-      ],
+      "tiles": ["https://tiles.gishub.vn/vn_islands/{z}/{x}/{y}.pbf"],
       "minzoom": 4,
       "maxzoom": 12
+    },
+    "protomaps": {
+      "type": "vector",
+      "url": "pmtiles://https://tiles.gishub.vn/pmtiles/vietnam_ptm.pmtiles"
     }
   },
   "sprite": "https://raw.githubusercontent.com/opengeoshub/vstyles/main/vstyles/ptm/dark/sprite",
