@@ -1,11 +1,11 @@
-{
+        {
     "version": 8,
     "sprite": "https://cdn.arcgis.com/sharing/rest/content/items/80be160f0ca1413d898ad4e90d197278/resources/styles/../sprites/sprite",
     "glyphs": "https://basemaps.arcgis.com/arcgis/rest/services/OpenStreetMap_v2/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf",
     "sources": {
         "esri": {
             "type": "vector",
-            "url": "https://basemaps.arcgis.com/arcgis/rest/services/OpenStreetMap_v2/VectorTileServer"
+            "url": "https://basemaps.arcgis.com/arcgis/rest/services/OpenStreetMap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
         }
     },
     "layers": [

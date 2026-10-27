@@ -5,7 +5,7 @@
     "sources": {
         "esri": {
             "type": "vector",
-            "url": "https://basemaps.arcgis.com/arcgis/rest/services/OpenStreetMap_v2/VectorTileServer"
+            "url": "https://basemaps.arcgis.com/arcgis/rest/services/OpenStreetMap_v2/VectorTileServer/tile/{z}/{y}/{x}.pbf"
         }
     },
     "layers": [
