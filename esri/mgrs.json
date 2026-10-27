@@ -1,21 +1,64 @@
 {
   "version": 8,
-  "sprite": "https://tiles.arcgis.com/tiles/HDgMIJDCbHtnomY9/arcgis/rest/services/MGRS_Grids/VectorTileServer/resources/styles/../sprites/sprite",
-  "glyphs": "https://tiles.arcgis.com/tiles/HDgMIJDCbHtnomY9/arcgis/rest/services/MGRS_Grids/VectorTileServer/resources/styles/../fonts/{fontstack}/{range}.pbf",
+  "metadata": {
+    "arcgisStyleUrl": "https://www.arcgis.com/sharing/rest/content/items/6d09415003784837ad83b395c379d7ff/resources/styles/root.json",
+    "arcgisOriginalItemTitle": "MGRS Grids - Edit",
+    "arcgisQuickEditorWarning": true,
+    "arcgisEditorExtents": [
+      {
+        "spatialReference": {"wkid": 102100},
+        "xmin": -8235516.256281427,
+        "ymin": 5067980.518542051,
+        "xmax": -8229821.69767419,
+        "ymax": 5071635.163956931
+      },
+      {
+        "spatialReference": {"wkid": 4326},
+        "xmin": -107.4900893551748,
+        "ymin": 19.010417418358696,
+        "xmax": -40.166455957918,
+        "ymax": 58.36819367381569
+      },
+      {
+        "spatialReference": {"wkid": 4326},
+        "xmin": -107.4900893551748,
+        "ymin": 19.010417418358696,
+        "xmax": -40.166455957918,
+        "ymax": 58.36819367381569
+      },
+      {
+        "spatialReference": {"wkid": 4326},
+        "xmin": -107.4900893551748,
+        "ymin": 19.010417418358696,
+        "xmax": -40.166455957918,
+        "ymax": 58.36819367381569
+      }
+    ],
+    "arcgisActiveBasemap": "10df2279f9684e4a9f6a7f08febac2a9",
+    "arcgisMinimapVisibility": false,
+    "maputnik:renderer": "mlgljs"
+  },
   "sources": {
     "esri": {
       "type": "vector",
-      "url": "https://tiles.arcgis.com/tiles/HDgMIJDCbHtnomY9/arcgis/rest/services/MGRS_Grids/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+      "tiles": [
+        "https://tiles.arcgis.com/tiles/HDgMIJDCbHtnomY9/arcgis/rest/services/MGRS_Grids/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+      ],
+      "minzoom": 0,
+      "maxzoom": 14,
+      "scheme": "xyz"
     }
   },
+  "sprite": "https://tiles.arcgis.com/tiles/HDgMIJDCbHtnomY9/arcgis/rest/services/MGRS_Grids/VectorTileServer/resources/styles/../sprites/sprite",
+  "glyphs": "https://tiles.arcgis.com/tiles/HDgMIJDCbHtnomY9/arcgis/rest/services/MGRS_Grids/VectorTileServer/resources/styles/../fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "1KM Grid Squares/18",
       "type": "line",
       "source": "esri",
       "source-layer": "1KM Grid Squares",
-      "filter": ["==", "_symbol", 0],
       "minzoom": 8,
+      "filter": ["==", "_symbol", 0],
       "layout": {
         "visibility": "visible",
         "line-miter-limit": 2,
@@ -50,12 +93,7 @@
       "paint": {
         "line-opacity": 1,
         "line-color": "rgba(255,255,255,0.7)",
-        "line-width": {
-          "stops": [
-            [8, 1.33333],
-            [17, 10.6667]
-          ]
-        },
+        "line-width": {"stops": [[8, 1.33333], [17, 10.6667]]},
         "line-gap-width": 0,
         "line-blur": 0,
         "line-translate-anchor": "map",
@@ -102,14 +140,8 @@
       },
       "paint": {
         "line-opacity": 1,
-        "line-color": "rgba(229,229,229,0.82)",
-        "line-width": {
-          "stops": [
-            [0, 1.33333],
-            [8, 1.33333],
-            [17, 13.3333]
-          ]
-        },
+        "line-color": "rgba(0, 0, 0, 1)",
+        "line-width": {"stops": [[0, 1.33333], [8, 1.33333], [17, 13.3333]]},
         "line-gap-width": 0,
         "line-blur": 0,
         "line-translate-anchor": "map",
@@ -122,8 +154,8 @@
       "type": "symbol",
       "source": "esri",
       "source-layer": "1KM Grid Squares/label",
-      "filter": ["==", "_label_class", 1],
       "minzoom": 9,
+      "filter": ["==", "_label_class", 1],
       "layout": {
         "visibility": "visible",
         "text-size": 13.3333,
@@ -159,7 +191,7 @@
       "paint": {
         "icon-opacity": 0.7,
         "text-opacity": 1,
-        "text-color": "#686868",
+        "text-color": "rgba(17, 16, 16, 1)",
         "text-halo-width": 0,
         "text-halo-blur": 0,
         "text-translate-anchor": "map",
@@ -173,8 +205,8 @@
       "type": "symbol",
       "source": "esri",
       "source-layer": "1KM Grid Squares/label",
-      "filter": ["==", "_label_class", 0],
       "minzoom": 9,
+      "filter": ["==", "_label_class", 0],
       "layout": {
         "visibility": "visible",
         "text-size": 13.3333,
@@ -323,9 +355,9 @@
       "type": "symbol",
       "source": "esri",
       "source-layer": "MGRS Grid Zone Designators/label",
-      "filter": ["==", "_label_class", 1],
       "minzoom": 2,
       "maxzoom": 3,
+      "filter": ["==", "_label_class", 1],
       "layout": {
         "visibility": "visible",
         "text-size": 13.3333,
@@ -374,8 +406,8 @@
       "type": "symbol",
       "source": "esri",
       "source-layer": "MGRS Grid Zone Designators/label",
-      "filter": ["==", "_label_class", 0],
       "minzoom": 3,
+      "filter": ["==", "_label_class", 0],
       "layout": {
         "visibility": "visible",
         "text-size": 21.3333,
@@ -420,41 +452,5 @@
       }
     }
   ],
-  "metadata": {
-    "arcgisStyleUrl": "https://www.arcgis.com/sharing/rest/content/items/6d09415003784837ad83b395c379d7ff/resources/styles/root.json",
-    "arcgisOriginalItemTitle": "MGRS Grids - Edit",
-    "arcgisQuickEditorWarning": true,
-    "arcgisEditorExtents": [
-      {
-        "spatialReference": { "wkid": 102100 },
-        "xmin": -8235516.256281427,
-        "ymin": 5067980.518542051,
-        "xmax": -8229821.69767419,
-        "ymax": 5071635.163956931
-      },
-      {
-        "spatialReference": { "wkid": 4326 },
-        "xmin": -107.4900893551748,
-        "ymin": 19.010417418358696,
-        "xmax": -40.166455957918,
-        "ymax": 58.36819367381569
-      },
-      {
-        "spatialReference": { "wkid": 4326 },
-        "xmin": -107.4900893551748,
-        "ymin": 19.010417418358696,
-        "xmax": -40.166455957918,
-        "ymax": 58.36819367381569
-      },
-      {
-        "spatialReference": { "wkid": 4326 },
-        "xmin": -107.4900893551748,
-        "ymin": 19.010417418358696,
-        "xmax": -40.166455957918,
-        "ymax": 58.36819367381569
-      }
-    ],
-    "arcgisActiveBasemap": "10df2279f9684e4a9f6a7f08febac2a9",
-    "arcgisMinimapVisibility": false
-  }
+  "id": "ggui70x"
 }
