@@ -1,0 +1,11 @@
+{
+  "tilejson": "2.2.0",
+  "name": "Night Earth 2012",
+  "description": "flipy",
+  "tiles": ["https://www.nightearth.com/nightmap/nightmap2012/{z}/{x}/{-y}.webp"],
+  "minzoom": 0,
+  "maxzoom": 7,
+  "bounds": [-180, -85.051129, 180, 85.051129],
+  "tileSize": 1024,
+  "attribution": "Night Earth"
+}
